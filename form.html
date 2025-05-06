@@ -1,0 +1,189 @@
+﻿<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./index.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link />
+    <title>Form Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <img src="./img/Giko Logo White.png" alt="Giko Logo" class="logo-img">
+            <img src="./img/Giko Logo Blue.png" alt="Giko Logo" class="logo-blue">
+        </div>
+        <!--Nav Items for smaller screen-->
+        <div class="burger" id="burger">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <nav class="topNavItemsBuger" id="navMenu">
+            <a href="#home">Home</a>
+
+            <div class="nav-item">
+                <a href="#about">About Us <i class="fa fa-caret-down dropdown-toggle"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our History</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#services">Services <i class="fa fa-caret-down dropdown-toggle"></i></a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Safety Inspection</a></li>
+                    <li><a href="#">Quality Contol</a></li>
+                    <li><a href="#">Compliance Audit</a></li>
+                    <li><a href="#">NDT Testing</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Manufacturing</a></li>
+                </ul>
+            </div>
+
+            <a href="#careers">Careers</a>
+            <a href="#resources">Resources</a>
+            <a href="#investors">Investors</a>
+            <a href="#search">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
+        <!--Nav Items for larger screen-->
+        <nav class="topNavItems">
+            <div class="nav-item">
+                <a href="#home">Home</a>
+            </div>
+            <div class="nav-item">
+                <a href="#about">About Us</a>
+                <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our History</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#services">Services</a>
+                <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Safety Inspection</a></li>
+                    <li><a href="#">Quality Contol</a></li>
+                    <li><a href="#">Compliance Audit</a></li>
+                    <li><a href="#">NDT Testing</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Manufacturing</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#careers">Careers</a>
+                <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Experienced Professionals</a></li>
+                    <li><a href="#">Workforce Opportunities</a></li>
+                    <li><a href="#">Early Careers Opportunities</a></li>
+                    <li><a href="#">Graduate Opportunities</a></li>
+                    <li><a href="#">Working at Giko </a></li>
+
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#resources">Resources</a>
+                <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Accreditations</a></li>
+                    <li><a href="#">Policies</a></li>
+
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#investors">Investors</a>
+                <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Reasons to Invest</a></li>
+                    <li><a href="#">Financial Reports</a></li>
+                </ul>
+            </div>
+            <div class="nav-item">
+                <a href="#search">Search</a>
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
+    </header>
+    <section class="hero-section">
+        <span>Contact Us</span>
+    </section>
+
+    <section class="content-section">
+        <!-- Form Column -->
+        <div class="form-container">
+            <h2>Get in Touch</h2>
+            <form id="contactForm" class="contact-form">
+                <div>
+                    <label for="firstname">First Name *</label>
+                    <input type="text" id="firstname" name="firstname" required>
+                </div>
+                <div>
+                    <label for="lastname">Last Name *</label>
+                    <input type="text" id="lastname" name="lastname" required>
+                </div>
+                <div>
+                    <label for="email">Email *</label>
+                    <input type="email" id="email" name="email" required>
+                </div>
+                <div>
+                    <label for="phone">Phone Number (optional)</label>
+                    <input type="tel" id="phone" name="phone">
+                </div>
+                <div>
+                    <label for="service">Select a Service (optional)</label>
+                    <select id="service" name="service">
+                        <option value="">--Please choose--</option>
+                        <option value="safety inspection">Safety Inspection</option>
+                        <option value="quality control">Quality Control</option>
+                        <option value="compliance audit">Compliance Audit</option>
+                        <option value="NDT testing">NDT Testing</option>
+                        <option value="oil&gas">Oil & Gas</option>
+                        <option value="construction">Construction</option>
+                        <option value="manufacturing">Manufacturing</option>
+                    </select>
+                </div>
+                <div>
+                    <label for="details">Give us more details (optional)</label>
+                    <textarea id="details" name="details" rows="5"></textarea>
+                </div>
+                <button type="submit">Submit</button>
+                <a href="index.html" class="btn-home">← Back to Home</a>
+            </form>
+        </div>
+
+        <!-- Info Column -->
+        <div class="info-container">
+            <h3>Contact Information</h3>
+            <p><strong>Email:</strong> contact@yourcompany.com</p>
+            <p><strong>Phone:</strong> +123 456 7890</p>
+            <p><strong>Address:</strong> 123 Main St, City, Country</p>
+
+            <h3>Business Hours</h3>
+            <p>Mon - Fri: 9:00 AM – 6:00 PM</p>
+            <p>Sat - Sun: Closed</p>
+
+            <h3>Follow Us</h3>
+            <p>
+                <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+            </p>
+        </div>
+    </section>
+    <script src="./index.js"></script>
+    <script src="./form.js"></script>
+</body>
+</html>
+
