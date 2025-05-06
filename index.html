@@ -1,30 +1,31 @@
 <!DOCTYPE html>
-
 <html lang="en" xmlns="http://www.w3.org/1999/xhtml">
 <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
     <!--<link rel="stylesheet" href="./form.css">-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
-    <link />
     <title>Home Page</title>
-</head>
+</head> 
 <body>
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="./img/Giko Logo White.png" alt="Giko Logo" class="logo-img">
-                <img src="./img/Giko Logo Blue.png" alt="Giko Logo" class="logo-blue">
+                <img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img">
+                <img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue">
             </div>
-            <!--Nav Items for smaller screen-->
+
+            <!-- Burger Menu for Small Screens -->
             <div class="burger" id="burger">
                 <i class="fa fa-bars"></i>
             </div>
 
-            <nav class="topNavItemsBuger" id="navMenu">
+            <!-- Nav Items for Small Screens -->
+            <nav class="topNavItemsBurger" id="navMenu">
                 <a href="#home">Home</a>
 
                 <div class="nav-item">
@@ -35,11 +36,12 @@
                         <li><a href="#">Our History</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#services">Services <i class="fa fa-caret-down dropdown-toggle"></i></a>
                     <ul class="dropdown-menu">
                         <li><a href="#">Safety Inspection</a></li>
-                        <li><a href="#">Quality Contol</a></li>
+                        <li><a href="#">Quality Control</a></li>
                         <li><a href="#">Compliance Audit</a></li>
                         <li><a href="#">NDT Testing</a></li>
                         <li><a href="#">Oil & Gas</a></li>
@@ -54,26 +56,29 @@
                 <a href="#search">Search <i class="fa-solid fa-magnifying-glass"></i></a>
                 <button class="contact-btn">Contact Us</button>
             </nav>
-            <!--Nav Items for larger screen-->
+
+            <!-- Nav Items for Large Screens -->
             <nav class="topNavItems">
                 <div class="nav-item">
                     <a href="#home">Home</a>
                 </div>
+
                 <div class="nav-item">
                     <a href="#about">About Us</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Who We Are</a></li>
                         <li><a href="#">Our Team</a></li>
                         <li><a href="#">Our History</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#services">Services</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon"></i>
+                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Safety Inspection</a></li>
-                        <li><a href="#">Quality Contol</a></li>
+                        <li><a href="#">Quality Control</a></li>
                         <li><a href="#">Compliance Audit</a></li>
                         <li><a href="#">NDT Testing</a></li>
                         <li><a href="#">Oil & Gas</a></li>
@@ -81,6 +86,7 @@
                         <li><a href="#">Manufacturing</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#careers">Careers</a>
                     <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
@@ -89,10 +95,10 @@
                         <li><a href="#">Workforce Opportunities</a></li>
                         <li><a href="#">Early Careers Opportunities</a></li>
                         <li><a href="#">Graduate Opportunities</a></li>
-                        <li><a href="#">Working at Giko </a></li>
-
+                        <li><a href="#">Working at Giko</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#resources">Resources</a>
                     <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
@@ -100,9 +106,9 @@
                         <li><a href="#">Case Studies</a></li>
                         <li><a href="#">Accreditations</a></li>
                         <li><a href="#">Policies</a></li>
-
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#investors">Investors</a>
                     <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
@@ -111,13 +117,16 @@
                         <li><a href="#">Financial Reports</a></li>
                     </ul>
                 </div>
+
                 <div class="nav-item">
                     <a href="#search">Search</a>
-                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </div>
+
                 <button class="contact-btn">Contact Us</button>
             </nav>
         </header>
+
         <main>
             <div class="img-slider">
                 <div class="slide slide1 active"></div>
@@ -132,24 +141,19 @@
                     <button class="contact-btn get-in-touch" onclick="location.href='form.html'">Get in Touch</button>
                 </div>
             </div>
-            <div>
-                <div class="carousel">
-                    <div class="carousel-track" id="carouselTrack">
-                        <img src="./img/offshore.png" alt="1" />
-                        <img src="./img/profac.png" alt="2" />
-                        <img src="./img/trident energy.png" alt="3" />
-                        <img src="./img/gepetrol.jpg" alt="4" />
-                        <img src="./img/exon-mob.png" alt="5" />
-                        <img src="./img/ge.jpg" alt="6" />
-                        <img src="./img/atlantic.jpg" alt="7" />
-                        <img src="./img/awa.png" alt="7" />
-                        <img src="./img/gep.jpg" alt="7" />
-                        <img src="./img/golden.png" alt="7" />
 
-                    </div>
-                </div>
-                <div>
-
+            <div class="carousel">
+                <div class="carousel-track" id="carouselTrack">
+                    <img src="./img/offshore.png" alt="Offshore">
+                    <img src="./img/profac.png" alt="Profac">
+                    <img src="./img/trident energy.png" alt="Trident Energy">
+                    <img src="./img/gepetrol.jpg" alt="Gepetrol">
+                    <img src="./img/exon-mob.png" alt="Exxon Mobil">
+                    <img src="./img/ge.jpg" alt="GE">
+                    <img src="./img/atlantic.jpg" alt="Atlantic">
+                    <img src="./img/awa.png" alt="AWA">
+                    <img src="./img/gep.jpg" alt="GEP">
+                    <img src="./img/golden.png" alt="Golden">
                 </div>
             </div>
         </main>
