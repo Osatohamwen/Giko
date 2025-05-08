@@ -1,11 +1,11 @@
 
-
 .hero-section {
   position: relative;
   height: 400px;
   background: url('./img/bg-10.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
+/*  flex-direction: column;*/
 /*  justify-content: center;*/
   align-items: center;
 }
@@ -58,6 +58,10 @@
     flex-direction: column;
     gap: 30px;
 }
+.contact-form div{
+    display: flex;
+    flex-direction: column;
+}
 
 label {
     font-weight: bold;
@@ -68,12 +72,28 @@ label {
 
 input, select, textarea {
     padding: 15px;
-    width: 100%;
     border: 1px solid #ccc;
     border-radius: 5px;
     background-color: #fafafa;
     margin-top: 5px;
 }
+.policy-check {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.policy-check input[type="checkbox"] {
+/*  margin-right: 0.5rem;*/
+  transform: scale(1.2);
+  accent-color: #007BFF; /* Optional: make it blue */
+}
+
+.policy-agreement a {
+  color: #007BFF;
+  text-decoration: underline;
+}
+
 
 button[type="submit"] {
     padding: 10px 20px;

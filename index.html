@@ -15,8 +15,8 @@
     <div class="container">
         <header class="header">
             <div class="logo">
-                <img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img">
-                <img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue">
+                <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
             </div>
 
             <!-- Burger Menu for Small Screens -->
@@ -27,35 +27,14 @@
             <!-- Nav Items for Small Screens -->
             <nav class="topNavItemsBurger" id="navMenu">
                 <a href="#home">Home</a>
-
-                <div class="nav-item">
-                    <a href="#about">About Us <i class="fa fa-caret-down dropdown-toggle"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Our Team</a></li>
-                        <li><a href="#">Our History</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-item">
-                    <a href="#services">Services <i class="fa fa-caret-down dropdown-toggle"></i></a>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Safety Inspection</a></li>
-                        <li><a href="#">Quality Control</a></li>
-                        <li><a href="#">Compliance Audit</a></li>
-                        <li><a href="#">NDT Testing</a></li>
-                        <li><a href="#">Oil & Gas</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Manufacturing</a></li>
-                    </ul>
-                </div>
-
+                <a href="#about">About Us</a>
+                <a href="#services">Services</a>
                 <a href="#careers">Careers</a>
                 <a href="#resources">Resources</a>
-                <a href="#investors">Investors</a>
-                <a href="#search">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
                 <button class="contact-btn">Contact Us</button>
             </nav>
+
 
             <!-- Nav Items for Large Screens -->
             <nav class="topNavItems">
@@ -63,9 +42,9 @@
                     <a href="#home">Home</a>
                 </div>
 
-                <div class="nav-item">
+                <div class="nav-item dropdown-icon">
                     <a href="#about">About Us</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Who We Are</a></li>
                         <li><a href="#">Our Team</a></li>
@@ -73,9 +52,9 @@
                     </ul>
                 </div>
 
-                <div class="nav-item">
+                <div class="nav-item dropdown-icon">
                     <a href="#services">Services</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Safety Inspection</a></li>
                         <li><a href="#">Quality Control</a></li>
@@ -87,9 +66,9 @@
                     </ul>
                 </div>
 
-                <div class="nav-item">
+                <div class="nav-item dropdown-icon">
                     <a href="#careers">Careers</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Experienced Professionals</a></li>
                         <li><a href="#">Workforce Opportunities</a></li>
@@ -99,34 +78,29 @@
                     </ul>
                 </div>
 
-                <div class="nav-item">
+                <div class="nav-item dropdown-icon">
                     <a href="#resources">Resources</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
                         <li><a href="#">Case Studies</a></li>
                         <li><a href="#">Accreditations</a></li>
                         <li><a href="#">Policies</a></li>
                     </ul>
                 </div>
-
-                <div class="nav-item">
-                    <a href="#investors">Investors</a>
-                    <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-                    <ul class="dropdown-menu">
-                        <li><a href="#">Reasons to Invest</a></li>
-                        <li><a href="#">Financial Reports</a></li>
-                    </ul>
-                </div>
-
-                <div class="nav-item">
+                <div class="nav-item search-visible">
                     <a href="#search">Search</a>
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </div>
-
                 <button class="contact-btn">Contact Us</button>
             </nav>
+            <div class="search-hidden" id="searchOverlay">
+                <span class="search-close" id="closeSearch">&times;</span>
+                <div class="search-hidden-box">
+                    <input type="text" id="searchInput" placeholder="Type to search..." />
+                    <button id="searchButton" class="search-icon-btn">Search</button>
+                </div>
+            </div>
         </header>
-
         <main>
             <div class="img-slider">
                 <div class="slide slide1 active"></div>
@@ -156,6 +130,72 @@
                     <img src="./img/golden.png" alt="Golden">
                 </div>
             </div>
+            <section class="services-section">
+                <h1 class="service-h1">Our Services</h1>
+                <div class="services-carousel-wrapper">
+                    <button class="arrow left" id="prevBtn">&#10094;</button>
+                    <div class="services-carousel" id="servicesCarousel">
+                        <div class="service-card" style="background-image: url('./img/safety.jpeg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service1">
+                                <h3>Safety Inspection</h3>
+                                <p>Ensure compliance and safety at every stage... Ensure compliance and safety at every stage... Ensure compliance and safety at every stage...Ensure compliance and safety at every stage...</p>
+                                <a href="services.html#service1-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/qc.jpeg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service2">
+                                <h3>Quality Control</h3>
+                                <p>Delivering products and services with consistency...</p>
+                                <a href="services.html#service2-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/ca.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service3">
+                                <h3>Compliance Audit</h3>
+                                <p>Thorough evaluations for regulatory compliance...</p>
+                                <a href="services.html#service3-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/ndt.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service4">
+                                <h3>NDT Testing</h3>
+                                <p>Non-destructive testing to ensure structural integrity...</p>
+                                <a href="services.html#service4-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/oilgas.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service5">
+                                <h3>Oil & Gas</h3>
+                                <p>Inspection and engineering services for oil and gas...</p>
+                                <a href="services.html#service5-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/construction.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service6">
+                                <h3>Construction</h3>
+                                <p>Engineering assurance in civil construction projects...</p>
+                                <a href="services.html#service6-details">Read More</a>
+                            </div>
+                        </div>
+                        <div class="service-card" style="background-image: url('./img/manu.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service6">
+                                <h3>Manufacturing</h3>
+                                <p>Engineering assurance in civil construction projects...</p>
+                                <a href="services.html#service6-details">Read More</a>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="arrow right" id="nextBtn">&#10095;</button>
+                </div>
+            </section>
+
         </main>
     </div>
 

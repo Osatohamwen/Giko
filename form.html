@@ -17,126 +17,102 @@
 </head>
 <body>
     <header class="header">
-    <div class="logo">
-        <img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img">
-        <img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue">
-    </div>
-
-    <!-- Burger Menu for Small Screens -->
-    <div class="burger" id="burger">
-        <i class="fa fa-bars"></i>
-    </div>
-
-    <!-- Nav Items for Small Screens -->
-    <nav class="topNavItemsBurger" id="navMenu">
-        <a href="#home">Home</a>
-
-        <div class="nav-item">
-            <a href="#about">About Us <i class="fa fa-caret-down dropdown-toggle"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Our History</a></li>
-            </ul>
+        <div class="logo">
+            <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+            <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
         </div>
 
-        <div class="nav-item">
-            <a href="#services">Services <i class="fa fa-caret-down dropdown-toggle"></i></a>
-            <ul class="dropdown-menu">
-                <li><a href="#">Safety Inspection</a></li>
-                <li><a href="#">Quality Control</a></li>
-                <li><a href="#">Compliance Audit</a></li>
-                <li><a href="#">NDT Testing</a></li>
-                <li><a href="#">Oil & Gas</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Manufacturing</a></li>
-            </ul>
+        <!-- Burger Menu for Small Screens -->
+        <div class="burger" id="burger">
+            <i class="fa fa-bars"></i>
         </div>
 
-        <a href="#careers">Careers</a>
-        <a href="#resources">Resources</a>
-        <a href="#investors">Investors</a>
-        <a href="#search">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-        <button class="contact-btn">Contact Us</button>
-    </nav>
-
-    <!-- Nav Items for Large Screens -->
-    <nav class="topNavItems">
-        <div class="nav-item">
+        <!-- Nav Items for Small Screens -->
+        <nav class="topNavItemsBurger" id="navMenu">
             <a href="#home">Home</a>
-        </div>
-
-        <div class="nav-item">
             <a href="#about">About Us</a>
-            <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-                <li><a href="#">Who We Are</a></li>
-                <li><a href="#">Our Team</a></li>
-                <li><a href="#">Our History</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-item">
             <a href="#services">Services</a>
-            <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-                <li><a href="#">Safety Inspection</a></li>
-                <li><a href="#">Quality Control</a></li>
-                <li><a href="#">Compliance Audit</a></li>
-                <li><a href="#">NDT Testing</a></li>
-                <li><a href="#">Oil & Gas</a></li>
-                <li><a href="#">Construction</a></li>
-                <li><a href="#">Manufacturing</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-item">
             <a href="#careers">Careers</a>
-            <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-                <li><a href="#">Experienced Professionals</a></li>
-                <li><a href="#">Workforce Opportunities</a></li>
-                <li><a href="#">Early Careers Opportunities</a></li>
-                <li><a href="#">Graduate Opportunities</a></li>
-                <li><a href="#">Working at Giko</a></li>
-            </ul>
-        </div>
-
-        <div class="nav-item">
             <a href="#resources">Resources</a>
-            <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-                <li><a href="#">Case Studies</a></li>
-                <li><a href="#">Accreditations</a></li>
-                <li><a href="#">Policies</a></li>
-            </ul>
-        </div>
+            <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
 
-        <div class="nav-item">
-            <a href="#investors">Investors</a>
-            <i class="fa-solid fa-caret-down dropdown-icon" aria-hidden="true"></i>
-            <ul class="dropdown-menu">
-                <li><a href="#">Reasons to Invest</a></li>
-                <li><a href="#">Financial Reports</a></li>
-            </ul>
-        </div>
 
-        <div class="nav-item">
-            <a href="#search">Search</a>
-            <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
-        </div>
+        <!-- Nav Items for Large Screens -->
+        <nav class="topNavItems">
+            <div class="nav-item">
+                <a href="#home">Home</a>
+            </div>
 
-        <button class="contact-btn">Contact Us</button>
-    </nav>
-</header>
+            <div class="nav-item dropdown-icon">
+                <a href="#about">About Us</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our History</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#services">Services</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Safety Inspection</a></li>
+                    <li><a href="#">Quality Control</a></li>
+                    <li><a href="#">Compliance Audit</a></li>
+                    <li><a href="#">NDT Testing</a></li>
+                    <li><a href="#">Oil & Gas</a></li>
+                    <li><a href="#">Construction</a></li>
+                    <li><a href="#">Manufacturing</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#careers">Careers</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Experienced Professionals</a></li>
+                    <li><a href="#">Workforce Opportunities</a></li>
+                    <li><a href="#">Early Careers Opportunities</a></li>
+                    <li><a href="#">Graduate Opportunities</a></li>
+                    <li><a href="#">Working at Giko</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#resources">Resources</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Accreditations</a></li>
+                    <li><a href="#">Policies</a></li>
+                </ul>
+            </div>
+            <div class="nav-item search-visible">
+                <a href="#search">Search</a>
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
+        <div class="search-hidden" id="searchOverlay">
+            <span class="search-close" id="closeSearch">&times;</span>
+            <div class="search-hidden-box">
+                <input type="text" id="searchInput" placeholder="Type to search..." />
+                <button id="searchButton" class="search-icon-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
     <section class="hero-section">
-        <span>Contact Us</span>
+        <span class="contact-detail">Contact Us </span>
     </section>
 
     <section class="content-section">
         <!-- Form Column -->
         <div class="form-container">
-            <h2>Get in Touch</h2>
+            <span class="service-h1">Get in Touch</span>
             <form id="contactForm" class="contact-form">
                 <div>
                     <label for="firstname">First Name *</label>
@@ -170,6 +146,13 @@
                 <div>
                     <label for="details">Give us more details (optional)</label>
                     <textarea id="details" name="details" rows="5"></textarea>
+                </div>
+                <div class="policy-agreement">
+                    <label for="policyCheckbox" class="policy-check">
+                        <span>I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and Terms of Service.</span>
+                        <input type="checkbox" required />
+                    </label>
+
                 </div>
                 <button type="submit">Submit</button>
                 <a href="index.html" class="btn-home">← Back to Home</a>
