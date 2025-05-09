@@ -4,7 +4,7 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./index.css">
-    <!--<link rel="stylesheet" href="./form.css">-->
+    <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -26,22 +26,19 @@
 
             <!-- Nav Items for Small Screens -->
             <nav class="topNavItemsBurger" id="navMenu">
-                <a href="#home">Home</a>
                 <a href="#about">About Us</a>
                 <a href="#services">Services</a>
                 <a href="#careers">Careers</a>
                 <a href="#resources">Resources</a>
                 <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-                <button class="contact-btn">Contact Us</button>
+                <a href="./form.html">
+                    <button class="contact-btn">Contact Us</button>
+                </a>
             </nav>
 
 
             <!-- Nav Items for Large Screens -->
             <nav class="topNavItems">
-                <div class="nav-item">
-                    <a href="#home">Home</a>
-                </div>
-
                 <div class="nav-item dropdown-icon">
                     <a href="#about">About Us</a>
                     <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
@@ -56,13 +53,11 @@
                     <a href="#services">Services</a>
                     <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Safety Inspection</a></li>
-                        <li><a href="#">Quality Control</a></li>
-                        <li><a href="#">Compliance Audit</a></li>
-                        <li><a href="#">NDT Testing</a></li>
-                        <li><a href="#">Oil & Gas</a></li>
-                        <li><a href="#">Construction</a></li>
-                        <li><a href="#">Manufacturing</a></li>
+                        <li><a href="#">Asset Integrity</a></li>
+                        <li><a href="#">Inspection Services</a></li>
+                        <li><a href="#">QC Services</a></li>
+                        <li><a href="#">Engineering Solutions</a></li>
+                        <li><a href="#">Marine Solution</a></li>
                     </ul>
                 </div>
 
@@ -135,71 +130,109 @@
                 <div class="services-carousel-wrapper">
                     <button class="arrow left" id="prevBtn">&#10094;</button>
                     <div class="services-carousel" id="servicesCarousel">
+                        <div class="service-card" style="background-image: url('./img/am.jpg');">
+                            <div class="overlay-service"></div>
+                            <div class="service-content" id="service1">
+                                <h3>Asset Integrity</h3>
+                                <ul class="decorative-list">
+                                    <li><a href="services.html#service1-details">Crane and Lifting Integrity</a></li>
+                                    <li><a href="services.html#service1-details">Maintenance Management</a></li>
+                                    <li><a href="services.html#service1-details">Process Integrity</a></li>
+                                    <li><a href="services.html#service1-details">Structural Integrity</a></li>
+                                    <li><a href="services.html#service1-details">TRIM Concept</a></li>
+                                </ul>
+                            </div>
+                        </div>
                         <div class="service-card" style="background-image: url('./img/safety.jpeg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
-                                <h3>Safety Inspection</h3>
-                                <p>Ensure compliance and safety at every stage... Ensure compliance and safety at every stage... Ensure compliance and safety at every stage...Ensure compliance and safety at every stage...</p>
-                                <a href="services.html#service1-details">Read More</a>
+                                <h3>Inspection Services</h3>
+                                <ul class="decorative-list">
+                                    <li><a href="services.html#service1-details">Lifting Appliances</a></li>
+                                    <li><a href="services.html#service1-details">Drilling Equipment</a></li>
+                                    <li><a href="services.html#service1-details">Static Pressurised Equipment</a></li>
+                                    <li><a href="services.html#service1-details">Hull and Structures</a></li>
+                                    <li><a href="services.html#service1-details">Storage Tank</a></li>
+                                    <li><a href="services.html#service1-details">Pressure Safety Valves</a></li>
+                                    <li><a href="services.html#service1-details">Instrument Calibration</a></li>
+                                    <li><a href="services.html#service1-details">Jacking Systems</a></li>
+                                    <li><a href="services.html#service1-details">Dropped Object Management</a></li>
+                                    <li><a href="services.html#service1-details">Non-Destructive Testing</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="service-card" style="background-image: url('./img/qc.jpeg');">
                             <div class="overlay-service"></div>
-                            <div class="service-content" id="service2">
-                                <h3>Quality Control</h3>
-                                <p>Delivering products and services with consistency...</p>
-                                <a href="services.html#service2-details">Read More</a>
+                            <div class="service-content" id="service1">
+                                <h3>QC Services</h3>
+                                <ul class="decorative-list">
+                                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                                </ul>
                             </div>
                         </div>
-                        <div class="service-card" style="background-image: url('./img/ca.jpg');">
+                        <div class="service-card" style="background-image: url('./img/ep.jpeg');">
                             <div class="overlay-service"></div>
-                            <div class="service-content" id="service3">
-                                <h3>Compliance Audit</h3>
-                                <p>Thorough evaluations for regulatory compliance...</p>
-                                <a href="services.html#service3-details">Read More</a>
-                            </div>
-                        </div>
-                        <div class="service-card" style="background-image: url('./img/ndt.jpg');">
-                            <div class="overlay-service"></div>
-                            <div class="service-content" id="service4">
-                                <h3>NDT Testing</h3>
-                                <p>Non-destructive testing to ensure structural integrity...</p>
-                                <a href="services.html#service4-details">Read More</a>
-                            </div>
-                        </div>
-                        <div class="service-card" style="background-image: url('./img/oilgas.jpg');">
-                            <div class="overlay-service"></div>
-                            <div class="service-content" id="service5">
-                                <h3>Oil & Gas</h3>
-                                <p>Inspection and engineering services for oil and gas...</p>
-                                <a href="services.html#service5-details">Read More</a>
+                            <div class="service-content" id="service1">
+                                <h3>Engineering & Products</h3>
+                                <ul class="decorative-list">
+                                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                                </ul>
                             </div>
                         </div>
                         <div class="service-card" style="background-image: url('./img/construction.jpg');">
                             <div class="overlay-service"></div>
-                            <div class="service-content" id="service6">
-                                <h3>Construction</h3>
-                                <p>Engineering assurance in civil construction projects...</p>
-                                <a href="services.html#service6-details">Read More</a>
-                            </div>
-                        </div>
-                        <div class="service-card" style="background-image: url('./img/manu.jpg');">
-                            <div class="overlay-service"></div>
-                            <div class="service-content" id="service6">
-                                <h3>Manufacturing</h3>
-                                <p>Engineering assurance in civil construction projects...</p>
-                                <a href="services.html#service6-details">Read More</a>
+                            <div class="service-content" id="service1">
+                                <h3>Compliance</h3>
+                                <ul class="decorative-list">
+                                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                                </ul>
                             </div>
                         </div>
                     </div>
                     <button class="arrow right" id="nextBtn">&#10095;</button>
                 </div>
             </section>
+            <section class="about-us" id="about">
+                <h1>About Us</h1>
+                <div class="about-container">
+                    <div class="about-image">
+                        <img src="./img/aboutOG.jpg" alt="Our Team">
+                    </div>
+                    <div class="about-content">
+                        <p>
+                            Giko Engineering is a well-established,
+                            wholly Nigerian-owned company with a strategic focus on the oil & gas,
+                            petrochemical, and energy sectors.
+                            We specialize in providing high-quality engineering solutions and
+                            are a trusted supplier of specialized industrial products for maintenance
+                            and technical services across Central Africa and beyond.
+                        </p>
+                        <p>
+                            Our reputation is built on consistent delivery, industry expertise, and a commitment to excellence.
+                            From critical infrastructure support to routine industrial maintenance,
+                            Giko Engineering partners with clients to ensure seamless operations and optimized performance.
+                        </p>
+                        <a href="about.html" class="about-btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            <section class="cta-section">
+                <div class="cta-container">
+                    <h2>Ready to Start Your Project?</h2>
+                    <p>Let’s work together to bring your vision to life.</p>
+                    <a href="./form.html" class="cta-btn">Contact Us</a>
+                </div>
+            </section>
+
 
         </main>
     </div>
 
     <script src="./index.js"></script>
-    <!--<script src="./form.js"></script>-->
+    <script src="./form.js"></script>
 </body>
 </html>

@@ -99,21 +99,37 @@
     const clones = track.innerHTML;
     track.innerHTML += clones;
 
+
+
     // === Service Carousel Logic ===
     const carousel = document.getElementById('servicesCarousel');
     const cards = document.querySelectorAll('.service-card');
     const prevBtn = document.getElementById('prevBtn');
     const nextBtn = document.getElementById('nextBtn');
 
-    const cardWidth = cards[0].offsetWidth + 20; // width + gap
-    const visibleCards = 3;
-    const maxScrollIndex = cards.length - visibleCards;
-
+    let cardWidth = cards[0].offsetWidth + 20;
+    let visibleCards = getVisibleCards();
+    let maxScrollIndex = cards.length - visibleCards;
     let currentIndex = 0;
 
+    function getVisibleCards() {
+        const screenWidth = window.innerWidth;
+        if (screenWidth < 600) return 1;
+        if (screenWidth < 900) return 2;
+        return 3;
+    }
+
     function updateCarousel() {
+        cardWidth = cards[0].offsetWidth + 20; // recalculate in case layout changed
         const offset = currentIndex * cardWidth;
         carousel.style.transform = `translateX(-${offset}px)`;
+    }
+
+    function handleResize() {
+        visibleCards = getVisibleCards();
+        maxScrollIndex = cards.length - visibleCards;
+        currentIndex = Math.min(currentIndex, maxScrollIndex);
+        updateCarousel();
     }
 
     prevBtn.addEventListener('click', () => {
@@ -130,6 +146,10 @@
         }
     });
 
+    window.addEventListener('resize', handleResize);
+
+    // Initialize
+    handleResize();
     updateCarousel();
 
 

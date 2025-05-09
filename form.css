@@ -6,7 +6,7 @@
   background-size: cover;
   display: flex;
 /*  flex-direction: column;*/
-/*  justify-content: center;*/
+/*  justify-content: flex-end;*/
   align-items: center;
 }
 
@@ -24,7 +24,7 @@
 
 .hero-section span {
   position: relative;
-  padding: 0 0 0 60px;
+  padding: 100px 0 0 60px;
 /*  color: white;*/
 /*  font-size: 48px;*/
   z-index: 2;
@@ -131,3 +131,10 @@ button[type="submit"] {
         font-size: 1rem;
         font-family: var(--body-font);
     }
+
+/*Width greater than 768px*/
+@media (min-width: 768px){
+    .hero-section span{
+        padding: 0 0 0 60px;
+    }
+}
