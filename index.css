@@ -265,7 +265,7 @@ h1, h2, h3 {
     justify-content: center;
     background-color: #19194f;
     border: 1px solid #19194f;
-    padding: 10px 8px;
+    padding: 10px 15px;
 }
 
 .get-in-touch {
@@ -326,7 +326,7 @@ h1, h2, h3 {
 
 .service-card {
     position: relative;
-    width: 290px;
+    width: 280px;
     height: 320px;
     background-size: cover;
     background-position: center;
@@ -542,7 +542,7 @@ h1, h2, h3 {
 
 
 .cta-section {
-  background: #19194f;
+  background: #0066cc;
   color: #fff;
   padding: 60px 20px;
   text-align: center;
@@ -563,11 +563,11 @@ h1, h2, h3 {
 }
 
 .cta-btn {
-  background-color: #ffd700;
+  background-color: #19194f;
 }
 
 .cta-btn:hover {
-  background-color: #e6c200;
+  background-color: rgba(0, 0, 0, 0.8);
 }
 
 
