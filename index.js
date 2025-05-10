@@ -153,8 +153,6 @@
     updateCarousel();
 
 
-<<<<<<< HEAD
-=======
     //================Video About Us=================//
     const video = document.getElementById("aboutVideo");
     const playBtn = document.getElementById("playButton");
@@ -168,6 +166,5 @@
             playBtn.style.display = "none";
         });
     }
->>>>>>> 18eaf8c (Initial commit with Git LFS)
 
 });
