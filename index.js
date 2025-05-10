@@ -153,5 +153,21 @@
     updateCarousel();
 
 
+<<<<<<< HEAD
+=======
+    //================Video About Us=================//
+    const video = document.getElementById("aboutVideo");
+    const playBtn = document.getElementById("playButton");
+
+    if (window.innerWidth <= 768) {
+        video.play();
+    } else {
+        playBtn.style.display = "block";
+        playBtn.addEventListener("click", () => {
+            video.play();
+            playBtn.style.display = "none";
+        });
+    }
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
 
 });

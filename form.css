@@ -5,12 +5,19 @@
   background: url('./img/bg-10.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
+<<<<<<< HEAD
 /*  flex-direction: column;*/
 /*  justify-content: flex-end;*/
   align-items: center;
 }
 
 .hero-section::before {
+=======
+  align-items: center;
+}
+
+.hero-section::before, integrity-section::before {
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
   content: '';
   position: absolute;
   width: 100%;
@@ -36,7 +43,11 @@
     flex-wrap: wrap;
     justify-content: center;
     padding: 60px 20px 20px;
+<<<<<<< HEAD
     gap: 40px;
+=======
+    gap: 20px;
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
 }
 
 .form-container, .info-container {
@@ -48,15 +59,29 @@
     border-radius: 10px;
 }
 
+<<<<<<< HEAD
     .form-container h2 {
         margin-bottom: 20px;
         color: #368deb;
     }
+=======
+.git-header {
+/*    margin-bottom: 40px;*/
+    color: #368deb;
+    font-weight: bold;
+    font-family: var(--heading-font);
+    font-size: 1.8rem;
+}
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
 
 .contact-form {
     display: flex;
     flex-direction: column;
     gap: 30px;
+<<<<<<< HEAD
+=======
+    margin: 20px 0 0 0;
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
 }
 .contact-form div{
     display: flex;
@@ -137,4 +162,11 @@ button[type="submit"] {
     .hero-section span{
         padding: 0 0 0 60px;
     }
+<<<<<<< HEAD
+=======
+    .content-section{
+            gap: 40px;
+
+    }
+>>>>>>> 18eaf8c (Initial commit with Git LFS)
 }

@@ -7,13 +7,13 @@
 
     <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="./index.css">
-
+    <link rel="stylesheet" href="./services.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link />
-    <title>Form Page</title>
+    <title>Service Page</title>
 </head>
 <body>
     <header class="header">
@@ -29,34 +29,19 @@
 
         <!-- Nav Items for Small Screens -->
         <nav class="topNavItemsBurger" id="navMenu">
-<<<<<<< HEAD
-            <a href="#home">Home</a>
-=======
->>>>>>> 18eaf8c (Initial commit with Git LFS)
             <a href="#about">About Us</a>
             <a href="#services">Services</a>
             <a href="#careers">Careers</a>
             <a href="#resources">Resources</a>
             <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-<<<<<<< HEAD
-            <button class="contact-btn">Contact Us</button>
-=======
             <a href="./form.html">
                 <button class="contact-btn">Contact Us</button>
             </a>
->>>>>>> 18eaf8c (Initial commit with Git LFS)
         </nav>
 
 
         <!-- Nav Items for Large Screens -->
         <nav class="topNavItems">
-<<<<<<< HEAD
-            <div class="nav-item">
-                <a href="#home">Home</a>
-            </div>
-
-=======
->>>>>>> 18eaf8c (Initial commit with Git LFS)
             <div class="nav-item dropdown-icon">
                 <a href="#about">About Us</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
@@ -71,21 +56,11 @@
                 <a href="#services">Services</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-<<<<<<< HEAD
-                    <li><a href="#">Safety Inspection</a></li>
-                    <li><a href="#">Quality Control</a></li>
-                    <li><a href="#">Compliance Audit</a></li>
-                    <li><a href="#">NDT Testing</a></li>
-                    <li><a href="#">Oil & Gas</a></li>
-                    <li><a href="#">Construction</a></li>
-                    <li><a href="#">Manufacturing</a></li>
-=======
                     <li><a href="#">Asset Integrity</a></li>
                     <li><a href="#">Inspection Services</a></li>
                     <li><a href="#">QC Services</a></li>
                     <li><a href="#">Engineering Solutions</a></li>
                     <li><a href="#">Marine Solution</a></li>
->>>>>>> 18eaf8c (Initial commit with Git LFS)
                 </ul>
             </div>
 
@@ -125,83 +100,46 @@
         </div>
     </header>
 
-    <section class="hero-section">
-        <span class="contact-detail">Contact Us </span>
+    <section class="integrity-section">
+        <span>Asset Integrity </span>
     </section>
+    <section class="about-us" id="about">
+        <div class="about-container">
+            <div class="about-image">
+                <div class="video-wrapper">
+                    <video id="aboutVideo" muted loop playsinline poster="./img/aboutOG.jpg">
+                        <source src="./video/about-us.mp4" type="video/mp4" />
+                        Your browser does not support the video tag.
+                    </video>
+                    <div class="video-overlay"></div>
+                    <button id="playButton" class="play-button">&#9658;</button>
+                </div>
+            </div>
+            <div class="about-content">
+                <h3>About Us</h3>
 
-    <section class="content-section">
-        <!-- Form Column -->
-        <div class="form-container">
-<<<<<<< HEAD
-            <span class="service-h1">Get in Touch</span>
-=======
-            <span class="git-header">Get in Touch</span>
->>>>>>> 18eaf8c (Initial commit with Git LFS)
-            <form id="contactForm" class="contact-form">
-                <div>
-                    <label for="firstname">First Name *</label>
-                    <input type="text" id="firstname" name="firstname" required>
-                </div>
-                <div>
-                    <label for="lastname">Last Name *</label>
-                    <input type="text" id="lastname" name="lastname" required>
-                </div>
-                <div>
-                    <label for="email">Email *</label>
-                    <input type="email" id="email" name="email" required>
-                </div>
-                <div>
-                    <label for="phone">Phone Number (optional)</label>
-                    <input type="tel" id="phone" name="phone">
-                </div>
-                <div>
-                    <label for="service">Select a Service (optional)</label>
-                    <select id="service" name="service">
-                        <option value="">--Please choose--</option>
-                        <option value="safety inspection">Safety Inspection</option>
-                        <option value="quality control">Quality Control</option>
-                        <option value="compliance audit">Compliance Audit</option>
-                        <option value="NDT testing">NDT Testing</option>
-                        <option value="oil&gas">Oil & Gas</option>
-                        <option value="construction">Construction</option>
-                        <option value="manufacturing">Manufacturing</option>
-                    </select>
-                </div>
-                <div>
-                    <label for="details">Give us more details (optional)</label>
-                    <textarea id="details" name="details" rows="5"></textarea>
-                </div>
-                <div class="policy-agreement">
-                    <label for="policyCheckbox" class="policy-check">
-                        <span>I agree to the <a href="privacy-policy.html" target="_blank">Privacy Policy</a> and Terms of Service.</span>
-                        <input type="checkbox" required />
-                    </label>
-
-                </div>
-                <button type="submit">Submit</button>
-                <a href="index.html" class="btn-home">← Back to Home</a>
-            </form>
-        </div>
-
-        <!-- Info Column -->
-        <div class="info-container">
-            <h3>Contact Information</h3>
-            <p><strong>Email:</strong> contact@yourcompany.com</p>
-            <p><strong>Phone:</strong> +123 456 7890</p>
-            <p><strong>Address:</strong> 123 Main St, City, Country</p>
-
-            <h3>Business Hours</h3>
-            <p>Mon - Fri: 9:00 AM – 6:00 PM</p>
-            <p>Sat - Sun: Closed</p>
-
-            <h3>Follow Us</h3>
-            <p>
-                <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
-            </p>
+                <p>
+                    Giko Engineering is a well-established, wholly Nigerian-owned company with a strategic focus on the oil & gas,
+                    petrochemical, and energy sectors. We specialize in providing high-quality engineering solutions and are a trusted
+                    supplier of specialized industrial products for maintenance and technical services across South Africa and beyond.
+                </p>
+                <p>
+                    Our reputation is built on consistent delivery, industry expertise, and a commitment to excellence. From critical
+                    infrastructure support to routine industrial maintenance, Giko Engineering partners with clients to ensure seamless
+                    operations and optimized performance.
+                </p>
+                <a href="about.html" class="about-btn">Learn More</a>
+            </div>
         </div>
     </section>
+
+
+
+
     <script src="./index.js"></script>
     <script src="./form.js"></script>
+    <script src="./services.js"></script>
+
 </body>
 </html>
 
