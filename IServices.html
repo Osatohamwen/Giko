@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./form.css">
+    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="./IServices.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link />
+    <title>Service Page</title>
+</head>
+<body>
+    <header class="header">
+        <div class="logo">
+            <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+            <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+        </div>
+
+        <!-- Burger Menu for Small Screens -->
+        <div class="burger" id="burger">
+            <i class="fa fa-bars"></i>
+        </div>
+
+        <!-- Nav Items for Small Screens -->
+        <nav class="topNavItemsBurger" id="navMenu">
+            <a href="#about">About Us</a>
+            <a href="#services">Services</a>
+            <a href="#careers">Careers</a>
+            <a href="#resources">Resources</a>
+            <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+            <a href="./form.html">
+                <button class="contact-btn">Contact Us</button>
+            </a>
+        </nav>
+
+
+        <!-- Nav Items for Large Screens -->
+        <nav class="topNavItems">
+            <div class="nav-item dropdown-icon">
+                <a href="#about">About Us</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Who We Are</a></li>
+                    <li><a href="#">Our Team</a></li>
+                    <li><a href="#">Our History</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#services">Services</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Asset Integrity</a></li>
+                    <li><a href="#">Inspection Services</a></li>
+                    <li><a href="#">QC Services</a></li>
+                    <li><a href="#">Engineering Solutions</a></li>
+                    <li><a href="#">Marine Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#careers">Careers</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Experienced Professionals</a></li>
+                    <li><a href="#">Workforce Opportunities</a></li>
+                    <li><a href="#">Early Careers Opportunities</a></li>
+                    <li><a href="#">Graduate Opportunities</a></li>
+                    <li><a href="#">Working at Giko</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-item dropdown-icon">
+                <a href="#resources">Resources</a>
+                <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Case Studies</a></li>
+                    <li><a href="#">Accreditations</a></li>
+                    <li><a href="#">Policies</a></li>
+                </ul>
+            </div>
+            <div class="nav-item search-visible">
+                <a href="#search">Search</a>
+                <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+            </div>
+            <button class="contact-btn">Contact Us</button>
+        </nav>
+        <div class="search-hidden" id="searchOverlay">
+            <span class="search-close" id="closeSearch">&times;</span>
+            <div class="search-hidden-box">
+                <input type="text" id="searchInput" placeholder="Type to search..." />
+                <button id="searchButton" class="search-icon-btn">Search</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="inspection-section">
+        <span>Inspection Services </span>
+    </section>
+    <div class="main-content">
+        <aside class="sidebar">
+            <h3>Our Services</h3>
+
+            <div class="service-group">
+                <button class="collapsible">Asset Integrity</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Crane and Lifting Integrity</a></li>
+                    <li><a href="services.html#service1-details">Maintenance Management</a></li>
+                    <li><a href="services.html#service1-details">Process Integrity</a></li>
+                    <li><a href="services.html#service1-details">Structural Integrity</a></li>
+                    <li><a href="services.html#service1-details">TRIM Concept</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Inspection Services</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Lifting Appliances</a></li>
+                    <li><a href="services.html#service1-details">Drilling Equipment</a></li>
+                    <li><a href="services.html#service1-details">Static Pressurised Equipment</a></li>
+                    <li><a href="services.html#service1-details">Hull and Structures</a></li>
+                    <li><a href="services.html#service1-details">Storage Tank</a></li>
+                    <li><a href="services.html#service1-details">Pressure Safety Valves</a></li>
+                    <li><a href="services.html#service1-details">Instrument Calibration</a></li>
+                    <li><a href="services.html#service1-details">Jacking Systems</a></li>
+                    <li><a href="services.html#service1-details">Dropped Object Management</a></li>
+                    <li><a href="services.html#service1-details">Non-Destructive Testing</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">QC Services</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Engineering & Products</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Compliance</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <section class="services">
+            <div class="service" id="lifting-appliances">
+                <div class="service-img">
+                    <img src="./img/lift.jpg" alt="Lifting Appliances" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-cogs"></i> Lifting Appliances</h2>
+                    <p id="lifting-appliances-text">We inspect cranes, hoists, and other lifting gear to ensure operational safety and compliance.</p>
+                    <div class="more-text" id="lifting-appliances-more" style="display: none;">
+                        <p>Our detailed inspections include load testing and certification aligned with international standards like LOLER and API.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('lifting-appliances')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="drilling-equipment">
+                <div class="service-img">
+                    <img src="./img/drilling.jpg" alt="Drilling Equipment" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-oil-can"></i> Drilling Equipment</h2>
+                    <p id="drilling-equipment-text">Comprehensive inspections for top drives, rotary tables, BOPs, and handling tools.</p>
+                    <div class="more-text" id="drilling-equipment-more" style="display: none;">
+                        <p>We evaluate the mechanical integrity, wear, and performance to ensure safe drilling operations in high-risk environments.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('drilling-equipment')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="static-equipment">
+                <div class="service-img">
+                    <img src="./img/static-pressure.jpg" alt="Static Pressurized Equipment" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-industry"></i> Static Pressurized Equipment</h2>
+                    <p id="static-equipment-text">Inspection and assessment of vessels, pipelines, and heat exchangers.</p>
+                    <div class="more-text" id="static-equipment-more" style="display: none;">
+                        <p>We use ultrasonic, radiographic, and visual methods to detect corrosion, cracking, and material loss under pressure conditions.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('static-equipment')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="hull-structures">
+                <div class="service-img">
+                    <img src="./img/Hull-Structure.jpg" alt="Hull and Structures" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-ship"></i> Hull and Structures</h2>
+                    <p id="hull-structures-text">Marine and offshore structure inspections for fatigue, corrosion, and integrity.</p>
+                    <div class="more-text" id="hull-structures-more" style="display: none;">
+                        <p>Our certified inspectors carry out thickness measurements, structural checks, and damage assessments using class-approved techniques.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('hull-structures')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="storage-tank">
+                <div class="service-img">
+                    <img src="./img/tank.jpg" alt="Storage Tanks" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-oil-tank"></i> Storage Tanks</h2>
+                    <p id="storage-tank-text">Inspection of fixed and floating roof tanks for product storage and environmental compliance.</p>
+                    <div class="more-text" id="storage-tank-more" style="display: none;">
+                        <p>We carry out MFL, vacuum box, and API 653 visual inspections to assess floor corrosion, shell deformation, and seal condition.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('storage-tank')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="psv">
+                <div class="service-img">
+                    <img src="./img/pressure-valve.jpg" alt="Pressure Safety Valves" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-compress-arrows-alt"></i> Pressure Safety Valves</h2>
+                    <p id="psv-text">Inspection, calibration, and certification of safety relief valves.</p>
+                    <div class="more-text" id="psv-more" style="display: none;">
+                        <p>We ensure proper set pressure, leakage integrity, and compliance to ASME/API standards through on-site or workshop calibration.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('psv')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="instrument-calibration">
+                <div class="service-img">
+                    <img src="./img/calibration.jpg" alt="Instrument Calibration" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-microchip"></i> Instrument Calibration</h2>
+                    <p id="instrument-calibration-text">Calibration and verification of instruments for flow, pressure, and temperature.</p>
+                    <div class="more-text" id="instrument-calibration-more" style="display: none;">
+                        <p>We use certified master instruments to adjust and verify sensors and transmitters, ensuring process accuracy and compliance.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('instrument-calibration')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="jacking">
+                <div class="service-img">
+                    <img src="./img/calibration.jpg" alt="Jacking System" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-microchip"></i> Jacking System</h2>
+                    <p id="instrument-calibration-text">Calibration and verification of instruments for flow, pressure, and temperature.</p>
+                    <div class="more-text" id="instrument-calibration-more" style="display: none;">
+                        <p>We use certified master instruments to adjust and verify sensors and transmitters, ensuring process accuracy and compliance.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('jacking-system')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="dropped-object">
+                <div class="service-img">
+                    <img src="./img/dropped-object.jpg" alt="Dropped Object Management" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-exclamation-triangle"></i> Dropped Object Management</h2>
+                    <p id="dropped-object-text">Identification and mitigation of potential dropped object hazards.</p>
+                    <div class="more-text" id="dropped-object-more" style="display: none;">
+                        <p>We carry out surveys, securement assessments, and implement tagging systems to minimize risk to personnel and equipment.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('dropped-object')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="ndt">
+                <div class="service-img">
+                    <img src="./img/nonDT.jpg" alt="Non-Destructive Testing" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-search"></i> Non-Destructive Testing (NDT)</h2>
+                    <p id="ndt-text">Advanced NDT techniques to assess material and weld integrity without damage.</p>
+                    <div class="more-text" id="ndt-more" style="display: none;">
+                        <p>We provide UT, MT, PT, RT, and phased array testing to detect flaws, cracks, and corrosion in critical assets.</p>
+                    </div>
+                    <button type="button" class="read-more" onclick="toggleDescription('ndt')">Read More</button>
+                </div>
+            </div>
+        </section>
+
+
+    </div>
+
+    <script src="./index.js"></script>
+    <script src="./form.js"></script>
+    <script src="./services.js"></script>
+
+</body>
+</html>
+

@@ -229,7 +229,7 @@ h1, h2, h3 {
     left: 5%;
     transform: translateY(-50%);
 }
-.img-slider-content span, .contact-detail {
+.img-slider-content span{
     font-family: var(--other-font);
     font-size: 2.6rem;
     display: block;
@@ -664,30 +664,46 @@ h1, h2, h3 {
         background: rgba(0, 0, 0, 1);
     }
 
-    .logo-blue { display: none; }
-    .logo-img { display: flex; }
+    .logo-blue {
+        display: none;
+    }
+
+    .logo-img {
+        display: flex;
+    }
 
     .search-hidden-box input {
         width: 50%;
     }
 
-    .burger { display: none; }
+    .burger {
+        display: none;
+    }
 
     .topNavItems {
         display: flex;
         width: 90%;
     }
-    .topNavItems .nav-item:hover{
-        color: #ffd700;
-    }
-    .topNavItems .nav-item a:hover{
-        color: #ffd700;
+
+        .topNavItems .nav-item:hover {
+            color: #ffd700;
+        }
+
+        .topNavItems .nav-item a:hover {
+            color: #ffd700;
+        }
+
+    .img-slider-content span {
+        font-size: 4rem;
     }
 
-    .img-slider-content span { font-size: 4rem; }
-    .img-slider-content p { font-size: 2rem; }
+    .img-slider-content p {
+        font-size: 2rem;
+    }
 
-    .eng-span { margin-top: -22px; }
+    .eng-span {
+        margin-top: -22px;
+    }
 
     .get-in-touch {
         width: 200px;
@@ -700,30 +716,36 @@ h1, h2, h3 {
     }
 
 
-    .contact-btn:hover {
-        background-color: #ffd700;
-    }
+        .contact-btn:hover {
+            background-color: #ffd700;
+        }
 
     .dropdown-menu {
         top: 70px;
         left: 40px;
         background: rgba(0, 0, 0, 0.7);
     }
+
     .slide1 {
         background-image: url('./img/bg-6.jpg');
     }
+
     .slide3 {
         background-image: url('./img/bg-10.jpg');
     }
+
     .service-h1 {
         font-size: 3rem;
     }
+
     .service-section {
         padding: 60px 40px;
     }
-    .about-us h1{
+
+    .about-us h1 {
         font-size: 3rem;
     }
+
     .about-us {
         padding: 60px 25px;
     }
@@ -745,13 +767,13 @@ h1, h2, h3 {
         border-radius: 12px;
         box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
     }
-    
-    
 
-    .video-wrapper video {
-        height: 100%;
-        object-fit: cover;
-    }
+
+
+        .video-wrapper video {
+            height: 100%;
+            object-fit: cover;
+        }
 
     .video-overlay {
         display: none;
@@ -793,24 +815,38 @@ h1, h2, h3 {
     .about-btn {
         align-self: flex-start;
     }
+
     .cta-container h2 {
         font-size: 2.2rem;
     }
+
     .cta-container p {
         font-size: 1.1rem;
     }
+}
 
-/* Desktops */
+    /* Desktops */
 @media (min-width: 1024px) {
-    .header { padding: 20px 60px; }
-    .topNavItems { width: 85%; }
-    .get-in-touch { width: 200px; }
-    .search-hidden-box input{
+    .header {
+        padding: 20px 60px;
+    }
+
+    .topNavItems {
+        width: 85%;
+    }
+
+    .get-in-touch {
+        width: 200px;
+    }
+
+    .search-hidden-box input {
         width: 40%;
     }
+
     .service-section {
         padding: 60px 40px;
     }
+
     .about-image, .about-content {
         flex: 1 1 400px;
     }

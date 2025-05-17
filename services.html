@@ -4,7 +4,6 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
     <link rel="stylesheet" href="./form.css">
     <link rel="stylesheet" href="./index.css">
     <link rel="stylesheet" href="./services.css">
@@ -103,35 +102,120 @@
     <section class="integrity-section">
         <span>Asset Integrity </span>
     </section>
-    <section class="about-us" id="about">
-        <div class="about-container">
-            <div class="about-image">
-                <div class="video-wrapper">
-                    <video id="aboutVideo" muted loop playsinline poster="./img/aboutOG.jpg">
-                        <source src="./video/about-us.mp4" type="video/mp4" />
-                        Your browser does not support the video tag.
-                    </video>
-                    <div class="video-overlay"></div>
-                    <button id="playButton" class="play-button">&#9658;</button>
+    <div class="main-content">
+        <aside class="sidebar">
+            <h3>Our Services</h3>
+
+            <div class="service-group">
+                <button class="collapsible">Asset Integrity</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Crane and Lifting Integrity</a></li>
+                    <li><a href="services.html#service1-details">Maintenance Management</a></li>
+                    <li><a href="services.html#service1-details">Process Integrity</a></li>
+                    <li><a href="services.html#service1-details">Structural Integrity</a></li>
+                    <li><a href="services.html#service1-details">TRIM Concept</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Inspection Services</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Lifting Appliances</a></li>
+                    <li><a href="services.html#service1-details">Drilling Equipment</a></li>
+                    <li><a href="services.html#service1-details">Static Pressurised Equipment</a></li>
+                    <li><a href="services.html#service1-details">Hull and Structures</a></li>
+                    <li><a href="services.html#service1-details">Storage Tank</a></li>
+                    <li><a href="services.html#service1-details">Pressure Safety Valves</a></li>
+                    <li><a href="services.html#service1-details">Instrument Calibration</a></li>
+                    <li><a href="services.html#service1-details">Jacking Systems</a></li>
+                    <li><a href="services.html#service1-details">Dropped Object Management</a></li>
+                    <li><a href="services.html#service1-details">Non-Destructive Testing</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">QC Services</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Engineering & Products</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                </ul>
+            </div>
+
+            <div class="service-group">
+                <button class="collapsible">Compliance</button>
+                <ul class="content">
+                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                </ul>
+            </div>
+        </aside>
+
+
+        <section class="services">
+            <div class="service" id="integrity">
+                <div class="service-img">
+                    <img src="./img/bg-2.jpg" alt="Asset Integrity" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-shield-alt"></i> Structural Integrity</h2>
+                    <p id="integrity-text">We ensure your infrastructure maintains peak performance through proactive inspection, monitoring, and predictive analytics for long-term reliability.</p>
+                    <button class="read-more" onclick="toggleDescription('integrity')">Read More</button>
                 </div>
             </div>
-            <div class="about-content">
-                <h3>About Us</h3>
 
-                <p>
-                    Giko Engineering is a well-established, wholly Nigerian-owned company with a strategic focus on the oil & gas,
-                    petrochemical, and energy sectors. We specialize in providing high-quality engineering solutions and are a trusted
-                    supplier of specialized industrial products for maintenance and technical services across South Africa and beyond.
-                </p>
-                <p>
-                    Our reputation is built on consistent delivery, industry expertise, and a commitment to excellence. From critical
-                    infrastructure support to routine industrial maintenance, Giko Engineering partners with clients to ensure seamless
-                    operations and optimized performance.
-                </p>
-                <a href="about.html" class="about-btn">Learn More</a>
+            <div class="service" id="maintenance">
+                <div class="service-img">
+                    <img src="./img/bg-3.jpg" alt="Maintenance Service" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-tools"></i> Maintenance Management</h2>
+                    <p id="maintenance-text">From preventive to condition-based maintenance, we help clients reduce downtime and extend asset life using smart strategies and digital tools.</p>
+                    <button class="read-more" onclick="toggleDescription('maintenance')">Read More</button>
+                </div>
             </div>
-        </div>
-    </section>
+
+            <div class="service" id="safety">
+                <div class="service-img">
+                    <img src="./img/bg-7.jpg" alt="Process Safety" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-hard-hat"></i> Process Safety & Integrity</h2>
+                    <p id="safety-text">Safety is non-negotiable. We provide hazard analysis, safety case preparation, and operational risk management tailored to industry regulations.</p>
+                    <button class="read-more" onclick="toggleDescription('safety')">Read More</button>
+                </div>
+            </div>
+
+            <div class="service" id="lifting">
+                <div class="service-img">
+                    <img src="./img/bg-5.jpg" alt="Lifting Operations" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-crane" id="CLO"></i> Crane & Lifting Integrity</h2>
+                    <p id="lifting-text">We handle planning, supervision, and execution of lifting operations for complex industrial environments—ensuring safety and compliance.</p>
+                    <button class="read-more" onclick="toggleDescription('lifting')">Read More</button>
+                </div>
+            </div>
+            <div class="service" id="trim">
+                <div class="service-img">
+                    <img src="./img/bg-5.jpg" alt="TRIM Concepts" />
+                </div>
+                <div class="service-text">
+                    <h2><i class="fas fa-crane" id="CLO"></i> TRIM Concepts</h2>
+                    <p id="lifting-text">We handle planning, supervision, and execution of lifting operations for complex industrial environments—ensuring safety and compliance.</p>
+                    <button class="read-more" onclick="toggleDescription('lifting')">Read More</button>
+                </div>
+            </div>
+        </section>
+    </div>
 
 
 
