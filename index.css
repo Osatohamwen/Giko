@@ -180,6 +180,9 @@ h1, h2, h3 {
 .dropdown-menu li:hover {
     transition: background-color 0.3s ease;
 }
+/*.nav-item:hover .dropdown-menu {
+    display: block !important;
+}*/
 
 /* Slider */
 .img-slider {
@@ -488,7 +491,7 @@ h1, h2, h3 {
   font-size: 2rem;
   color: #19194f;
   text-align: center;
-  padding: 40px 20px 20px;
+/*  padding: 40px 20px;*/
 }
 
 .about-container {
@@ -496,6 +499,7 @@ h1, h2, h3 {
   flex-direction: column;
   align-items: center;
   position: relative;
+  padding: 60px 0;
 }
 
 .about-image {
@@ -608,6 +612,70 @@ h1, h2, h3 {
   background-color: transparent;
   border: 1px solid #19194f;
 }
+
+/*==========Footer============*/
+.footer {
+  background-color: #1e1e1e;
+  color: #ccc;
+  padding: 40px 60px;
+  font-family: 'Segoe UI', sans-serif;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 30px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.footer-column {
+  flex: 1 1 220px;
+}
+
+.footer-column h3 {
+  color: #fff;
+  margin-bottom: 15px;
+}
+
+.footer-column ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-column ul li {
+  margin-bottom: 10px;
+}
+
+.footer-column ul li a {
+  color: #ccc;
+  text-decoration: none;
+}
+
+.footer-column ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-links a {
+  color: #ccc;
+  margin-right: 10px;
+  font-size: 18px;
+  text-decoration: none;
+}
+
+.social-links a:hover {
+  color: #fff;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 30px;
+  font-size: 14px;
+}
+
 
 
 
@@ -788,8 +856,8 @@ h1, h2, h3 {
         background-color: rgba(0, 0, 0, 0.6);
         color: #fff;
         border: none;
-        font-size: 40px;
-        padding: 8px 14px;
+        font-size: 35px;
+        padding: 6px 12px;
         cursor: pointer;
         border-radius: 50%;
         z-index: 2;
