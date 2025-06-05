@@ -5,7 +5,7 @@
 .maintenance-section {
   position: relative;
   height: 400px;
-  background: url('./img/mm.jpg') no-repeat center center;
+  background: url('../img/mm.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;

@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <title>AboutUs Page</title>
+</head>
+<body>
+    <div class="container">
+        <header class="header">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            </div>
+
+            <!-- Burger Menu for Small Screens -->
+            <div class="burger" id="burger">
+                <i class="fa fa-bars"></i>
+            </div>
+
+            <!--Nav Items for Small Screens-->
+            <nav class="topNavItemsBurger" id="navMenu">
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/index.html#services-section">Services</a>
+                <a href="#careers">Careers</a>
+                <a href="#resources">Resources</a>
+                <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
+                <a href="../html/form.html">
+                    <button class="contact-btn">Contact Us</button>
+                </a>
+            </nav>
+
+
+            <!--Nav Items for larger Screens-->
+            <nav class="topNavItems">
+                <div class="nav-item dropdown-icon">
+                    <a href="#about">About Us</a>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/about.html#whoWeAre">Who We Are</a></li>
+                        <li><a href="../html/about.html#mission">Mission/Vision</a></li>
+                        <li><a href="#">Our History</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown-icon">
+                    <a href="#services">Services</a>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="../html/services.html">Asset Integrity</a></li>
+                        <li><a href="../html/IServices.html">Inspection Services</a></li>
+                        <li><a href="#">QC Services</a></li>
+                        <li><a href="#">Engineering Solutions</a></li>
+                        <li><a href="#">Marine Solution</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown-icon">
+                    <a href="#careers">Careers</a>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Experienced Professionals</a></li>
+                        <li><a href="#">Workforce Opportunities</a></li>
+                        <li><a href="#">Early Careers Opportunities</a></li>
+                        <li><a href="#">Graduate Opportunities</a></li>
+                        <li><a href="#">Working at Giko</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav-item dropdown-icon">
+                    <a href="#resources">Resources</a>
+                    <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
+                    <ul class="dropdown-menu">
+                        <li><a href="#">Case Studies</a></li>
+                        <li><a href="#">Accreditations</a></li>
+                        <li><a href="#">Policies</a></li>
+                    </ul>
+                </div>
+                <div class="nav-item search-visible">
+                    <a href="#search">Search</a>
+                    <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
+                </div>
+                <a href="../html/form.html">
+                    <button class="contact-btn">Contact Us</button>
+                </a>
+            </nav>
+            <div class="search-hidden" id="searchOverlay">
+                <span class="search-close" id="closeSearch">&times;</span>
+                <div class="search-hidden-box">
+                    <input type="text" id="searchInput" placeholder="Type to search..." />
+                    <button id="searchButton" class="search-icon-btn">Search</button>
+                </div>
+            </div>
+        </header>
+        <main>
+            <section class="aboutUs-section">
+                <span>About Us </span>
+            </section>
+            <div class="main-content">
+                <section class="aboutUs-content" id="whoWeAre">
+                    <h2>Who We Are</h2>
+                    <p>
+                        Giko Engineering is a well-established, wholly Nigerian-owned company with a strategic focus on the oil & gas,
+                        petrochemical, and energy sectors. We specialize in providing high-quality engineering solutions and are a trusted
+                        supplier of specialized industrial products for maintenance and technical services across West Africa and beyond.
+                    </p>
+                    <p>
+                        Our reputation is built on consistent delivery, industry expertise, and a commitment to excellence. From critical
+                        infrastructure support to routine industrial maintenance, Giko Engineering partners with clients to ensure seamless
+                        operations and optimized performance.
+                    </p>
+                </section>
+                <section class="aboutUs" id="mission">
+                    <div class="vision-section">
+                        <h2><span class="vision-span">Our Vision - </span>To become a supplier of specialised products & services through innovation in Oil & Gas, Petrochemical and energy industry globally.</h2>
+                        
+                    </div>
+
+                    <div class="mission-values">
+                        <div class="mission">
+                            <h3>Our Mission</h3>
+                            <img src="../img/mission.jpg" alt="Mission" class="mission-img">
+                            <ul>
+                                <li>Providing quality innovative solutions for the global oil, gas, and energy sectors.</li>
+                                <li>Delivering specialized, high-quality products and services worldwide.</li>
+                                <li>Supplying innovative solutions to the oil, gas, and energy industries globally.</li>
+                            </ul>
+                        </div>
+
+                        <div class="values">
+                            <h3>Our Values</h3>
+                            <ul>
+                                <li><span class="int"><span class="yellow">S</span>afety</span><br />Always put health and safety first</li>
+                                <li><span class="int"><span class="yellow">I</span>ntegrity</span><br /> Honesty at the core of every action.</li>
+                                <li><span class="int"><span class="yellow">T</span>eamwork</span><br />Exceeding expectations, together.</li>
+                                <li><span class="int"><span class="yellow">I</span>nnovation</span><br />Continuous innovation and improvement.</li>
+                                <li><span class="int"><span class="yellow">E</span>xcellence</span><br />Driven to deliver.</li>
+                            </ul>
+                        </div>
+                    </div>
+                </section>
+
+            </div>
+        </main>
+        <footer class="footer">
+            <div class="footer-container">
+                <div class="logo">
+                    <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                    <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+                </div>
+                <div class="footer-column">
+                    <h3>About Us</h3>
+                    <p>
+                        We provide high-quality engineering inspection, calibration, and technical consulting services across industrial and offshore sectors.
+                    </p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Services</h3>
+                    <ul>
+                        <li><a href="../html/services.html">Asset Integrity</a></li>
+                        <li><a href="../html/IServices.html">Inspection Services</a></li>
+                        <li><a href="#">QC Services</a></li>
+                        <li><a href="#">Engineering Solutions</a></li>
+                        <li><a href="#">Marine Solution</a></li>
+                    </ul>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Contact</h3>
+                    <p><span>Email:</span> admin@gikoengineering.com <br />info@gikoengineering.com</p>
+                    <p><span>Phone:</span> <br />+234 903 765 5762 <br /> +44 79 3574 4718</p>
+                    <p><span>Address:</span> <br />11a Ada-George rd flt 4 Mgbuoba, Portharcourt, Nigeria.</p>
+                </div>
+
+                <div class="footer-column">
+                    <h3>Follow Us</h3>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/company/giko-engineering-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="#"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#"><i class="fab fa-twitter"></i></a>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom">
+                <p>&copy; 2025 Giko Engineering LTD. All rights reserved.</p>
+            </div>
+        </footer>
+
+    </div>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/form.js"></script>
+</body>
+</html>

@@ -3,20 +3,25 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./form.css">
+
+    <!-- CSS file paths -->
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/form.css">
+
+    <!-- External CSS -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+
     <title>Home Page</title>
-</head> 
+</head>
 <body>
     <div class="container">
         <header class="header">
             <div class="logo">
-                <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
-                <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+                <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
             </div>
 
             <!-- Burger Menu for Small Screens -->
@@ -24,27 +29,27 @@
                 <i class="fa fa-bars"></i>
             </div>
 
-            <!-- Nav Items for Small Screens -->
+            <!--Nav Items for Small Screens-->
             <nav class="topNavItemsBurger" id="navMenu">
-                <a href="#about">About Us</a>
-                <a href="index.html#services-section">Services</a>
+                <a href="../html/about.html">About Us</a>
+                <a href="../html/index.html#services-section">Services</a>
                 <a href="#careers">Careers</a>
                 <a href="#resources">Resources</a>
                 <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-                <a href="./form.html">
+                <a href="../html/form.html">
                     <button class="contact-btn">Contact Us</button>
                 </a>
             </nav>
 
 
-            <!-- Nav Items for Large Screens -->
+            <!--Nav Items for larger Screens-->
             <nav class="topNavItems">
                 <div class="nav-item dropdown-icon">
                     <a href="#about">About Us</a>
                     <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
-                        <li><a href="#">Who We Are</a></li>
-                        <li><a href="#">Our Team</a></li>
+                        <li><a href="../html/about.html#whoWeAre">Who We Are</a></li>
+                        <li><a href="../html/about.html#mission">Mission/Vision</a></li>
                         <li><a href="#">Our History</a></li>
                     </ul>
                 </div>
@@ -53,8 +58,8 @@
                     <a href="#services">Services</a>
                     <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                     <ul class="dropdown-menu">
-                        <li><a href="./services.html">Asset Integrity</a></li>
-                        <li><a href="./IServices.html">Inspection Services</a></li>
+                        <li><a href="../html/services.html">Asset Integrity</a></li>
+                        <li><a href="../html/IServices.html">Inspection Services</a></li>
                         <li><a href="#">QC Services</a></li>
                         <li><a href="#">Engineering Solutions</a></li>
                         <li><a href="#">Marine Solution</a></li>
@@ -86,7 +91,9 @@
                     <a href="#search">Search</a>
                     <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
                 </div>
-                <button class="contact-btn">Contact Us</button>
+                <a href="../html/form.html">
+                    <button class="contact-btn">Contact Us</button>
+                </a>
             </nav>
             <div class="search-hidden" id="searchOverlay">
                 <span class="search-close" id="closeSearch">&times;</span>
@@ -107,22 +114,22 @@
                 <div class="img-slider-content">
                     <span><span class="giko-span">GIKO</span> <span class="eng-span">ENGINEERING</span></span>
                     <p>Engineering Solutions with Unmatched Precision</p>
-                    <button class="contact-btn get-in-touch" onclick="location.href='form.html'">Get in Touch</button>
+                    <button class="contact-btn get-in-touch" onclick="location.href='../html/form.html'">Get in Touch</button>
                 </div>
             </div>
 
             <div class="carousel">
                 <div class="carousel-track" id="carouselTrack">
-                    <img src="./img/offshore.png" alt="Offshore">
-                    <img src="./img/profac.png" alt="Profac">
-                    <img src="./img/trident energy.png" alt="Trident Energy">
-                    <img src="./img/gepetrol.jpg" alt="Gepetrol">
-                    <img src="./img/exon-mob.png" alt="Exxon Mobil">
-                    <img src="./img/ge.jpg" alt="GE">
-                    <img src="./img/atlantic.jpg" alt="Atlantic">
-                    <img src="./img/awa.png" alt="AWA">
-                    <img src="./img/gep.jpg" alt="GEP">
-                    <img src="./img/golden.png" alt="Golden">
+                    <img src="../img/offshore.png" alt="Offshore">
+                    <img src="../img/profac.png" alt="Profac">
+                    <img src="../img/trident energy.png" alt="Trident Energy">
+                    <img src="../img/gepetrol.jpg" alt="Gepetrol">
+                    <img src="../img/exon-mob.png" alt="Exxon Mobil">
+                    <img src="../img/ge.jpg" alt="GE">
+                    <img src="../img/atlantic.jpg" alt="Atlantic">
+                    <img src="../img/awa.png" alt="AWA">
+                    <img src="../img/gep.jpg" alt="GEP">
+                    <img src="../img/golden.png" alt="Golden">
                 </div>
             </div>
             <section class="services-section" id="services-section">
@@ -130,58 +137,58 @@
                 <div class="services-carousel-wrapper">
                     <button class="arrow left" id="prevBtn">&#10094;</button>
                     <div class="services-carousel" id="servicesCarousel">
-                        <div class="service-card" style="background-image: url('./img/am.jpg');">
+                        <div class="service-card" style="background-image: url('../img/am.jpg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
                                 <h3>Asset Integrity</h3>
                                 <ul class="decorative-list">
-                                    <li><a href="services.html#lifting">Crane and Lifting Integrity</a></li>
-                                    <li><a href="services.html#maintenance">Maintenance Management</a></li>
-                                    <li><a href="services.html#safety">Process Integrity</a></li>
-                                    <li><a href="services.html#integrity">Structural Integrity</a></li>
-                                    <li><a href="services.html#trim">TRIM Concept</a></li>
+                                    <li><a href="../html/services.html#lifting">Crane and Lifting Integrity</a></li>
+                                    <li><a href="../html/services.html#maintenance">Maintenance Management</a></li>
+                                    <li><a href="../html/services.html#safety">Process Integrity</a></li>
+                                    <li><a href="../html/services.html#integrity">Structural Integrity</a></li>
+                                    <li><a href="../html/services.html#trim">TRIM Concept</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="service-card" style="background-image: url('./img/safety.jpeg');">
+                        <div class="service-card" style="background-image: url('../img/safety.jpeg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
                                 <h3>Inspection Services</h3>
                                 <ul class="decorative-list">
-                                    <li><a href="IServices.html#lifting-appliances">Lifting Appliances</a></li>
-                                    <li><a href="IServices.html#drilling-equipment">Drilling Equipment</a></li>
-                                    <li><a href="IServices.html#static-equipment">Static Pressurised Equipment</a></li>
-                                    <li><a href="IServices.html#hull-structures" ">Hull and Structures</a></li>
-                                    <li><a href="IServices.html#storage-tank">Storage Tank</a></li>
-                                    <li><a href="IServices.html#psv">Pressure Safety Valves</a></li>
-                                    <li><a href="IServices.html#instrument-calibration">Instrument Calibration</a></li>
-                                    <li><a href="IServices.html#jacking">Jacking Systems</a></li>
-                                    <li><a href="IServices.html#dropped-object">Dropped Object Management</a></li>
-                                    <li><a href="IServices.html#ndt">Non-Destructive Testing</a></li>
+                                    <li><a href="../html/IServices.html#lifting-appliances">Lifting Appliances</a></li>
+                                    <li><a href="../html/IServices.html#drilling-equipment">Drilling Equipment</a></li>
+                                    <li><a href="../html/IServices.html#static-equipment">Static Pressurised Equipment</a></li>
+                                    <li><a href="../html/IServices.html#hull-structures" ">Hull and Structures</a></li>
+                                    <li><a href="../html/IServices.html#storage-tank">Storage Tank</a></li>
+                                    <li><a href="../html/IServices.html#psv">Pressure Safety Valves</a></li>
+                                    <li><a href="../html/IServices.html#instrument-calibration">Instrument Calibration</a></li>
+                                    <li><a href="../html/IServices.html#jacking">Jacking Systems</a></li>
+                                    <li><a href="../html/IServices.html#dropped-object">Dropped Object Management</a></li>
+                                    <li><a href="../html/IServices.html#ndt">Non-Destructive Testing</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="service-card" style="background-image: url('./img/qc.jpeg');">
+                        <div class="service-card" style="background-image: url('../img/qc.jpeg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
                                 <h3>QC Services</h3>
                                 <ul class="decorative-list">
-                                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
-                                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
-                                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                                    <li><a href="../html/services.html#service1-details">Fabrication Follow-up</a></li>
+                                    <li><a href="../html/services.html#service1-details">Welding Solutions</a></li>
+                                    <li><a href="../html/services.html#service1-details">Coating Solutions</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="service-card" style="background-image: url('./img/ep.jpeg');">
+                        <div class="service-card" style="background-image: url('../img/ep.jpeg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
                                 <h3>Engineering & Products</h3>
                                 <ul class="decorative-list">
-                                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                                    <li><a href="../html/services.html#service1-details">Engineering Solutions</a></li>
                                 </ul>
                             </div>
                         </div>
-                        <div class="service-card" style="background-image: url('./img/construction.jpg');">
+                        <div class="service-card" style="background-image: url('../img/construction.jpg');">
                             <div class="overlay-service"></div>
                             <div class="service-content" id="service1">
                                 <h3>Compliance</h3>
@@ -201,8 +208,8 @@
                 <div class="about-container">
                     <div class="about-image">
                         <div class="video-wrapper">
-                            <video id="aboutVideo" muted loop playsinline poster="./img/aboutOG.jpg">
-                                <source src="./video/about-us.mp4" type="video/mp4" />
+                            <video id="aboutVideo" muted loop playsinline poster="../img/aboutOG.jpg">
+                                <source src="../video/about-us.mp4" type="video/mp4" />
                                 Your browser does not support the video tag.
                             </video>
                             <div class="video-overlay"></div>
@@ -220,7 +227,7 @@
                             infrastructure support to routine industrial maintenance, Giko Engineering partners with clients to ensure seamless
                             operations and optimized performance.
                         </p>
-                        <a href="about.html" class="about-btn">Learn More</a>
+                        <a href="../html/about.html" class="about-btn">Learn More</a>
                     </div>
                 </div>
             </section>
@@ -228,17 +235,28 @@
                 <div class="cta-container">
                     <h2>Ready to Start Your Project?</h2>
                     <p>Let’s work together to bring your vision to life.</p>
-                    <a href="./form.html" class="cta-btn">Contact Us</a>
+                    <a href="../html/form.html" class="cta-btn">Contact Us</a>
                 </div>
             </section>
 
 
         </main>
+        <div class="map">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.911586390305!2d7.034191115248422!3d4.882005096002318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069c94042fa1db7%3A0xa5a1c9a73d2470a2!2s11a%20Ada-George%20Rd%2C%20Flat%204%2C%20Mgbuoba%2C%20Port%20Harcourt%2C%20Rivers%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1685968175700!5m2!1sen!2sng"
+                    width="100%"
+                    height="300"
+                    style="border:0; display: block;"
+                    allowfullscreen=""
+                    loading="lazy"
+                    referrerpolicy="no-referrer-when-downgrade">
+            </iframe>
+
+        </div>
         <footer class="footer">
             <div class="footer-container">
                 <div class="logo">
-                    <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
-                    <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+                    <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                    <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
                 </div>
                 <div class="footer-column">
                     <h3>About Us</h3>
@@ -250,24 +268,24 @@
                 <div class="footer-column">
                     <h3>Services</h3>
                     <ul>
-                        <li><a href="#lifting-appliances">Lifting Appliances</a></li>
-                        <li><a href="#drilling-equipment">Drilling Equipment</a></li>
-                        <li><a href="#static-equipment">Static Equipment</a></li>
-                        <li><a href="#ndt">Non-Destructive Testing</a></li>
+                        <li><a href="../html/services.html">Asset Integrity</a></li>
+                        <li><a href="../html/IServices.html">Inspection Services</a></li>
+                        <li><a href="#">QC Services</a></li>
+                        <li><a href="#">Engineering Solutions</a></li>
+                        <li><a href="#">Marine Solution</a></li>
                     </ul>
                 </div>
 
                 <div class="footer-column">
                     <h3>Contact</h3>
-                    <p>Email: contact@yourcompany.com</p>
-                    <p>Phone: +1 (234) 567-8901</p>
-                    <p>Address: 123 Industrial Zone, City, Country</p>
+                    <p><span>Email:</span> admin@gikoengineering.com <br />info@gikoengineering.com</p>
+                    <p><span>Phone:</span> <br />+234 903 765 5762 <br /> +44 79 3574 4718</p>
                 </div>
 
                 <div class="footer-column">
                     <h3>Follow Us</h3>
                     <div class="social-links">
-                        <a href="#"><i class="fab fa-linkedin-in"></i></a>
+                        <a href="https://www.linkedin.com/company/giko-engineering-ltd/"><i class="fab fa-linkedin-in"></i></a>
                         <a href="#"><i class="fab fa-facebook-f"></i></a>
                         <a href="#"><i class="fab fa-twitter"></i></a>
                     </div>
@@ -275,13 +293,14 @@
             </div>
 
             <div class="footer-bottom">
-                <p>&copy; 2025 Giko Engineering Company. All rights reserved.</p>
+                <p>&copy; 2025 Giko Engineering LTD. All rights reserved.</p>
             </div>
         </footer>
 
     </div>
 
-    <script src="./index.js"></script>
-    <script src="./form.js"></script>
+    <!-- JS file paths -->
+    <script src="../js/index.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 </html>

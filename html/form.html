@@ -4,8 +4,8 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./form.css">
-    <link rel="stylesheet" href="./index.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
 
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -17,8 +17,8 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
-            <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
         </div>
 
         <!-- Burger Menu for Small Screens -->
@@ -26,27 +26,27 @@
             <i class="fa fa-bars"></i>
         </div>
 
-        <!-- Nav Items for Small Screens -->
+        <!--Nav Items for Small Screens-->
         <nav class="topNavItemsBurger" id="navMenu">
-            <a href="#about">About Us</a>
-            <a href="index.html#services-section">Services</a>
+            <a href="../html/about.html">About Us</a>
+            <a href="../html/index.html#services-section">Services</a>
             <a href="#careers">Careers</a>
             <a href="#resources">Resources</a>
             <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="./form.html">
+            <a href="../html/form.html">
                 <button class="contact-btn">Contact Us</button>
             </a>
         </nav>
 
 
-        <!-- Nav Items for Large Screens -->
+        <!--Nav Items for larger Screens-->
         <nav class="topNavItems">
             <div class="nav-item dropdown-icon">
                 <a href="#about">About Us</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="../html/about.html#whoWeAre">Who We Are</a></li>
+                    <li><a href="../html/about.html#mission">Mission/Vision</a></li>
                     <li><a href="#">Our History</a></li>
                 </ul>
             </div>
@@ -55,8 +55,8 @@
                 <a href="#services">Services</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="./services.html">Asset Integrity</a></li>
-                    <li><a href="./IServices.html">Inspection Services</a></li>
+                    <li><a href="../html/services.html">Asset Integrity</a></li>
+                    <li><a href="../html/IServices.html">Inspection Services</a></li>
                     <li><a href="#">QC Services</a></li>
                     <li><a href="#">Engineering Solutions</a></li>
                     <li><a href="#">Marine Solution</a></li>
@@ -88,7 +88,9 @@
                 <a href="#search">Search</a>
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </div>
-            <button class="contact-btn">Contact Us</button>
+            <a href="../html/form.html">
+                <button class="contact-btn">Contact Us</button>
+            </a>
         </nav>
         <div class="search-hidden" id="searchOverlay">
             <span class="search-close" id="closeSearch">&times;</span>
@@ -149,29 +151,43 @@
 
                 </div>
                 <button type="submit">Submit</button>
-                <a href="index.html" class="btn-home">← Back to Home</a>
+                <a href="../html/index.html" class="btn-home">← Back to Home</a>
             </form>
         </div>
 
         <!-- Info Column -->
-        <div class="info-container">
-            <h3>Contact Information</h3>
-            <p><strong>Email:</strong> contact@yourcompany.com</p>
-            <p><strong>Phone:</strong> +123 456 7890</p>
-            <p><strong>Address:</strong> 123 Main St, City, Country</p>
+        <div>
+            <div class="info-container">
+                <h3>Contact Information</h3>
+                <p><strong>Email:</strong> admin@gikoengineering.com <strong>or</strong> info@gikoengineering.com</p>
+                <p><strong>Phone:</strong> +234 903 765 5762 <strong>or</strong> +44 79 3574 4718</p>
+                <p><strong>Address:</strong> 11a Ada-George rd flt 4 Mgbuoba, Portharcourt, Nigeria.</p>
 
-            <h3>Business Hours</h3>
-            <p>Mon - Fri: 9:00 AM – 6:00 PM</p>
-            <p>Sat - Sun: Closed</p>
+                <h3>Business Hours</h3>
+                <p>Mon - Fri: 8:00 AM – 6:00 PM</p>
+                <p>Sat - Sun: Closed</p>
 
-            <h3>Follow Us</h3>
-            <p>
-                <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
-            </p>
+                <h3>Follow Us</h3>
+                <p>
+                    <a href="#">Facebook</a> | <a href="#">LinkedIn</a> | <a href="#">Instagram</a>
+                </p>
+            </div>
+            <div style="width: 100%; max-width: 600px; height: 400px; margin: auto;">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.911586390305!2d7.034191115248422!3d4.882005096002318!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1069c94042fa1db7%3A0xa5a1c9a73d2470a2!2s11a%20Ada-George%20Rd%2C%20Flat%204%2C%20Mgbuoba%2C%20Port%20Harcourt%2C%20Rivers%20State%2C%20Nigeria!5e0!3m2!1sen!2sng!4v1685968175700!5m2!1sen!2sng"
+                        width="100%"
+                        height="400"
+                        style="border:0;"
+                        allowfullscreen=""
+                        loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade">
+
+                </iframe>
+            </div>
+
         </div>
     </section>
-    <script src="./index.js"></script>
-    <script src="./form.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/form.js"></script>
 </body>
 </html>
 

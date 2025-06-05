@@ -4,21 +4,23 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./form.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./services.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/services.css">
+
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Hedvig+Letters+Sans&family=Vollkorn:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
     <link />
-    <title>Service Page</title>
+    <title>Process Integrity Page</title>
 </head>
 <body>
     <header class="header">
         <div class="logo">
-            <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
-            <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
         </div>
 
         <!-- Burger Menu for Small Screens -->
@@ -26,27 +28,27 @@
             <i class="fa fa-bars"></i>
         </div>
 
-        <!-- Nav Items for Small Screens -->
+        <!--Nav Items for Small Screens-->
         <nav class="topNavItemsBurger" id="navMenu">
-            <a href="#about">About Us</a>
-            <a href="index.html#services-section">Services</a>
+            <a href="../html/about.html">About Us</a>
+            <a href="../html/index.html#services-section">Services</a>
             <a href="#careers">Careers</a>
             <a href="#resources">Resources</a>
             <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="./form.html">
+            <a href="../html/form.html">
                 <button class="contact-btn">Contact Us</button>
             </a>
         </nav>
 
 
-        <!-- Nav Items for Large Screens -->
+        <!--Nav Items for larger Screens-->
         <nav class="topNavItems">
             <div class="nav-item dropdown-icon">
                 <a href="#about">About Us</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="../html/about.html#whoWeAre">Who We Are</a></li>
+                    <li><a href="../html/about.html#mission">Mission/Vision</a></li>
                     <li><a href="#">Our History</a></li>
                 </ul>
             </div>
@@ -55,8 +57,8 @@
                 <a href="#services">Services</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="./services.html">Asset Integrity</a></li>
-                    <li><a href="./IServices.html">Inspection Services</a></li>
+                    <li><a href="../html/services.html">Asset Integrity</a></li>
+                    <li><a href="../html/IServices.html">Inspection Services</a></li>
                     <li><a href="#">QC Services</a></li>
                     <li><a href="#">Engineering Solutions</a></li>
                     <li><a href="#">Marine Solution</a></li>
@@ -88,7 +90,9 @@
                 <a href="#search">Search</a>
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </div>
-            <button class="contact-btn">Contact Us</button>
+            <a href="../html/form.html">
+                <button class="contact-btn">Contact Us</button>
+            </a>
         </nav>
         <div class="search-hidden" id="searchOverlay">
             <span class="search-close" id="closeSearch">&times;</span>
@@ -100,7 +104,7 @@
     </header>
 
     <section class="integrity-section">
-        <span>Asset Integrity </span>
+        <span>Asset Integrity</span>
     </section>
     <div class="main-content">
         <aside class="sidebar">
@@ -108,69 +112,69 @@
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Asset Integrity</a>
+                    <a class="sideH" href="../html/services.html">Asset Integrity</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="./craneLifting.html">Crane and Lifting Integrity</a></li>
-                    <li><a href="./maintenance.html">Maintenance Management</a></li>
-                    <li><a href="./process.html">Process Integrity</a></li>
-                    <li><a href="./structural.html">Structural Integrity</a></li>
-                    <li><a href="./trim.html">TRIM Concept</a></li>
+                    <li><a href="../html/craneLifting.html">Crane and Lifting Integrity</a></li>
+                    <li><a href="../html/maintenance.html">Maintenance Management</a></li>
+                    <li><a href="../html/process.html">Process Integrity</a></li>
+                    <li><a href="../html/structural.html">Structural Integrity</a></li>
+                    <li><a href="../html/trim.html">TRIM Concept</a></li>
                 </ul>
             </div>
 
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./IServices.html">Inspection Services</a>
+                    <a class="sideH" href="../html/IServices.html">Inspection Services</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Lifting Appliances</a></li>
-                    <li><a href="services.html#service1-details">Drilling Equipment</a></li>
-                    <li><a href="services.html#service1-details">Static Pressurised Equipment</a></li>
-                    <li><a href="services.html#service1-details">Hull and Structures</a></li>
-                    <li><a href="services.html#service1-details">Storage Tank</a></li>
-                    <li><a href="services.html#service1-details">Pressure Safety Valves</a></li>
-                    <li><a href="services.html#service1-details">Instrument Calibration</a></li>
-                    <li><a href="services.html#service1-details">Jacking Systems</a></li>
-                    <li><a href="services.html#service1-details">Dropped Object Management</a></li>
-                    <li><a href="services.html#service1-details">Non-Destructive Testing</a></li>
+                    <li><a href="../html/services.html#service1-details">Lifting Appliances</a></li>
+                    <li><a href="../html/services.html#service1-details">Drilling Equipment</a></li>
+                    <li><a href="../html/services.html#service1-details">Static Pressurised Equipment</a></li>
+                    <li><a href="../html/services.html#service1-details">Hull and Structures</a></li>
+                    <li><a href="../html/services.html#service1-details">Storage Tank</a></li>
+                    <li><a href="../html/services.html#service1-details">Pressure Safety Valves</a></li>
+                    <li><a href="../html/services.html#service1-details">Instrument Calibration</a></li>
+                    <li><a href="../html/services.html#service1-details">Jacking Systems</a></li>
+                    <li><a href="../html/services.html#service1-details">Dropped Object Management</a></li>
+                    <li><a href="../html/services.html#service1-details">Non-Destructive Testing</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">QC Services</a>
+                    <a class="sideH" href="../html/services.html">QC Services</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
-                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
-                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="../html/services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Coating Solutions</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Engineering & Products</a>
+                    <a class="sideH" href="../html/services.html">Engineering & Products</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Engineering Solutions</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Compliances</a>
+                    <a class="sideH" href="../html/services.html">Compliances</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
-                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
-                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="../html/services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Coating Solutions</a></li>
                 </ul>
             </div>
         </aside>
@@ -180,7 +184,7 @@
             <!-- Crane & Lifting Integrity -->
             <div class="service" id="lifting">
                 <div class="service-img">
-                    <img src="./img/lift.jpg" alt="Lifting Operations" />
+                    <img src="../img/lift.jpg" alt="Lifting Operations" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-crane"></i> Crane & Lifting Integrity</h2>
@@ -190,14 +194,14 @@
                         independent specialist in the field of cranes and lifting appliances, we deliver comprehensive
                         solutions for safe and compliant lifting operations.
                     </p>
-                    <a class="read-more" href="./craneLifting.html">Read More</a>
+                    <a class="read-more" href="../html/craneLifting.html">Read More</a>
                 </div>
             </div>
 
             <!-- Maintenance Management -->
             <div class="service" id="maintenance">
                 <div class="service-img">
-                    <img src="./img/mm.jpg" alt="Maintenance Service" />
+                    <img src="../img/mm.jpg" alt="Maintenance Service" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-tools"></i> Maintenance Management</h2>
@@ -208,14 +212,14 @@
                         that enhance asset reliability, ensure regulatory compliance, and give you full control over your
                         critical assets.
                     </p>
-                    <a class="read-more" href="./maintenance.html">Read More</a>
+                    <a class="read-more" href="../html/maintenance.html">Read More</a>
                 </div>
             </div>
 
             <!-- Structural Integrity -->
             <div class="service" id="integrity">
                 <div class="service-img">
-                    <img src="./img/integrity.jpg" alt="Asset Integrity" />
+                    <img src="../img/integrity.jpg" alt="Asset Integrity" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-shield-alt"></i> Structural Integrity</h2>
@@ -225,14 +229,14 @@
                         extreme cold, or storms. At <strong>GIKO ENGINEERING LIMITED</strong>, we recognize the complexities
                         involved in monitoring and maintaining the integrity of your offshore installations.
                     </p>
-                    <a class="read-more" href="./structural.html">Read More</a>
+                    <a class="read-more" href="../html/structural.html">Read More</a>
                 </div>
             </div>
 
             <!-- Process Safety -->
             <div class="service" id="safety">
                 <div class="service-img">
-                    <img src="./img/psi.jpg" alt="Process Safety" />
+                    <img src="../img/psi.jpg" alt="Process Safety" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-hard-hat"></i> Process Safety & Integrity</h2>
@@ -242,38 +246,84 @@
                         <strong>GIKO ENGINEERING LIMITED</strong>, we prioritize a modern, integrated approach to safeguard your
                         operational assets, ensuring ongoing reliability and cost-efficiency.
                     </p>
-                    <a class="read-more" href="./process.html">Read More</a>
+                    <a class="read-more" href="../html/process.html">Read More</a>
                 </div>
             </div>
 
             <!-- TRIM Concepts -->
             <div class="service" id="trim">
                 <div class="service-img">
-                    <img src="./img/rig.jpg" alt="TRIM Concepts" />
+                    <img src="../img/rig.jpg" alt="TRIM Concepts" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-cogs"></i> TRIM Concepts</h2>
-                        <p>
-                            <strong>GIKO ENGINEERING LIMITED’s Total Rig Integrity Management (TRIM)</strong> approach consolidates
-                            key scopes into a cohesive, cost-effective package designed to optimize inspection,
-                            certification, and verification processes. Our systematic evaluation of assets, continuous
-                            performance monitoring, and strict adherence to regulatory standards enable us to help you
-                            achieve your operational and business objectives efficiently.
-                        </p>
+                    <p>
+                        <strong>GIKO ENGINEERING LIMITED’s Total Rig Integrity Management (TRIM)</strong> approach consolidates
+                        key scopes into a cohesive, cost-effective package designed to optimize inspection,
+                        certification, and verification processes. Our systematic evaluation of assets, continuous
+                        performance monitoring, and strict adherence to regulatory standards enable us to help you
+                        achieve your operational and business objectives efficiently.
+                    </p>
 
-                    <a class="read-more" href="./trim.html">Read More</a>
+                    <a class="read-more" href="../html/trim.html">Read More</a>
                 </div>
             </div>
 
         </section>
+
     </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                    We provide high-quality engineering inspection, calibration, and technical consulting services across industrial and offshore sectors.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="../html/services.html">Asset Integrity</a></li>
+                    <li><a href="../html/IServices.html">Inspection Services</a></li>
+                    <li><a href="#">QC Services</a></li>
+                    <li><a href="#">Engineering Solutions</a></li>
+                    <li><a href="#">Marine Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><span>Email:</span> admin@gikoengineering.com <br />info@gikoengineering.com</p>
+                <p><span>Phone:</span> <br />+234 903 765 5762 <br /> +44 79 3574 4718</p>
+                <p><span>Address:</span> <br />11a Ada-George rd flt 4 Mgbuoba, Portharcourt, Nigeria.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/giko-engineering-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Giko Engineering LTD. All rights reserved.</p>
+        </div>
+    </footer>
 
 
 
 
-    <script src="./index.js"></script>
-    <script src="./form.js"></script>
-    <script src="./services.js"></script>
+    <script src="../js/index.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/services.js"></script>
 
 </body>
 </html>

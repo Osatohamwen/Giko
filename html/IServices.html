@@ -4,10 +4,10 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./form.css">
-    <link rel="stylesheet" href="./index.css">
-    <link rel="stylesheet" href="./services.css">
-    <link rel="stylesheet" href="./IServices.css">
+    <link rel="stylesheet" href="../css/form.css">
+    <link rel="stylesheet" href="../css/index.css">
+    <link rel="stylesheet" href="../css/services.css">
+    <link rel="stylesheet" href="../css/IServices.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,8 +18,8 @@
 <body>
     <header class="header">
         <div class="logo">
-            <a href="./index.html"><img src="./img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
-            <a href="./index.html"><img src="./img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+            <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
         </div>
 
         <!-- Burger Menu for Small Screens -->
@@ -27,27 +27,27 @@
             <i class="fa fa-bars"></i>
         </div>
 
-        <!-- Nav Items for Small Screens -->
+        <!--Nav Items for Small Screens-->
         <nav class="topNavItemsBurger" id="navMenu">
-            <a href="#about">About Us</a>
-            <a href="index.html#services-section">Services</a>
+            <a href="../html/about.html">About Us</a>
+            <a href="../html/index.html#services-section">Services</a>
             <a href="#careers">Careers</a>
             <a href="#resources">Resources</a>
             <a href="#search" class="search-visible">Search <i class="fa-solid fa-magnifying-glass"></i></a>
-            <a href="./form.html">
+            <a href="../html/form.html">
                 <button class="contact-btn">Contact Us</button>
             </a>
         </nav>
 
 
-        <!-- Nav Items for Large Screens -->
+        <!--Nav Items for larger Screens-->
         <nav class="topNavItems">
             <div class="nav-item dropdown-icon">
                 <a href="#about">About Us</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="#">Who We Are</a></li>
-                    <li><a href="#">Our Team</a></li>
+                    <li><a href="../html/about.html#whoWeAre">Who We Are</a></li>
+                    <li><a href="../html/about.html#mission">Mission/Vision</a></li>
                     <li><a href="#">Our History</a></li>
                 </ul>
             </div>
@@ -56,8 +56,8 @@
                 <a href="#services">Services</a>
                 <i class="fa-solid fa-caret-down" aria-hidden="true"></i>
                 <ul class="dropdown-menu">
-                    <li><a href="./services.html">Asset Integrity</a></li>
-                    <li><a href="./IServices.html">Inspection Services</a></li>
+                    <li><a href="../html/services.html">Asset Integrity</a></li>
+                    <li><a href="../html/IServices.html">Inspection Services</a></li>
                     <li><a href="#">QC Services</a></li>
                     <li><a href="#">Engineering Solutions</a></li>
                     <li><a href="#">Marine Solution</a></li>
@@ -89,7 +89,9 @@
                 <a href="#search">Search</a>
                 <i class="fa-solid fa-magnifying-glass" aria-hidden="true"></i>
             </div>
-            <button class="contact-btn">Contact Us</button>
+            <a href="../html/form.html">
+                <button class="contact-btn">Contact Us</button>
+            </a>
         </nav>
         <div class="search-hidden" id="searchOverlay">
             <span class="search-close" id="closeSearch">&times;</span>
@@ -109,69 +111,69 @@
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Asset Integrity</a>
+                    <a class="sideH" href="../html/services.html">Asset Integrity</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="./craneLifting.html">Crane and Lifting Integrity</a></li>
-                    <li><a href="./maintenance.html">Maintenance Management</a></li>
-                    <li><a href="./process.html">Process Integrity</a></li>
-                    <li><a href="./structural.html">Structural Integrity</a></li>
-                    <li><a href="./trim.html">TRIM Concept</a></li>
+                    <li><a href="../html/craneLifting.html">Crane and Lifting Integrity</a></li>
+                    <li><a href="../html/maintenance.html">Maintenance Management</a></li>
+                    <li><a href="../html/process.html">Process Integrity</a></li>
+                    <li><a href="../html/structural.html">Structural Integrity</a></li>
+                    <li><a href="../html/trim.html">TRIM Concept</a></li>
                 </ul>
             </div>
 
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./IServices.html">Inspection Services</a>
+                    <a class="sideH" href="../html/IServices.html">Inspection Services</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Lifting Appliances</a></li>
-                    <li><a href="services.html#service1-details">Drilling Equipment</a></li>
-                    <li><a href="services.html#service1-details">Static Pressurised Equipment</a></li>
-                    <li><a href="services.html#service1-details">Hull and Structures</a></li>
-                    <li><a href="services.html#service1-details">Storage Tank</a></li>
-                    <li><a href="services.html#service1-details">Pressure Safety Valves</a></li>
-                    <li><a href="services.html#service1-details">Instrument Calibration</a></li>
-                    <li><a href="services.html#service1-details">Jacking Systems</a></li>
-                    <li><a href="services.html#service1-details">Dropped Object Management</a></li>
-                    <li><a href="services.html#service1-details">Non-Destructive Testing</a></li>
+                    <li><a href="../html/services.html#service1-details">Lifting Appliances</a></li>
+                    <li><a href="../html/services.html#service1-details">Drilling Equipment</a></li>
+                    <li><a href="../html/services.html#service1-details">Static Pressurised Equipment</a></li>
+                    <li><a href="../html/services.html#service1-details">Hull and Structures</a></li>
+                    <li><a href="../html/services.html#service1-details">Storage Tank</a></li>
+                    <li><a href="../html/services.html#service1-details">Pressure Safety Valves</a></li>
+                    <li><a href="../html/services.html#service1-details">Instrument Calibration</a></li>
+                    <li><a href="../html/services.html#service1-details">Jacking Systems</a></li>
+                    <li><a href="../html/services.html#service1-details">Dropped Object Management</a></li>
+                    <li><a href="../html/services.html#service1-details">Non-Destructive Testing</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">QC Services</a>
+                    <a class="sideH" href="../html/services.html">QC Services</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
-                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
-                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="../html/services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Coating Solutions</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Engineering & Products</a>
+                    <a class="sideH" href="../html/services.html">Engineering & Products</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Engineering Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Engineering Solutions</a></li>
                 </ul>
             </div>
 
             <div class="service-group">
                 <div class="header-flex">
-                    <a class="sideH" href="./services.html">Compliances</a>
+                    <a class="sideH" href="../html/services.html">Compliances</a>
                     <button class="collapsible" aria-label="Toggle submenu"></button>
                 </div>
                 <ul class="content">
-                    <li><a href="services.html#service1-details">Fabrication Follow-up</a></li>
-                    <li><a href="services.html#service1-details">Welding Solutions</a></li>
-                    <li><a href="services.html#service1-details">Coating Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Fabrication Follow-up</a></li>
+                    <li><a href="../html/services.html#service1-details">Welding Solutions</a></li>
+                    <li><a href="../html/services.html#service1-details">Coating Solutions</a></li>
                 </ul>
             </div>
         </aside>
@@ -180,7 +182,7 @@
         <section class="services">
             <div class="service" id="lifting-appliances">
                 <div class="service-img">
-                    <img src="./img/lift.jpg" alt="Lifting Appliances" />
+                    <img src="../img/lift.jpg" alt="Lifting Appliances" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-cogs"></i> Lifting Appliances</h2>
@@ -194,7 +196,7 @@
 
             <div class="service" id="drilling-equipment">
                 <div class="service-img">
-                    <img src="./img/drilling.jpg" alt="Drilling Equipment" />
+                    <img src="../img/drilling.jpg" alt="Drilling Equipment" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-oil-can"></i> Drilling Equipment</h2>
@@ -208,7 +210,7 @@
 
             <div class="service" id="static-equipment">
                 <div class="service-img">
-                    <img src="./img/static-pressure.jpg" alt="Static Pressurized Equipment" />
+                    <img src="../img/static-pressure.jpg" alt="Static Pressurized Equipment" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-industry"></i> Static Pressurized Equipment</h2>
@@ -222,7 +224,7 @@
 
             <div class="service" id="hull-structures">
                 <div class="service-img">
-                    <img src="./img/Hull-Structure.jpg" alt="Hull and Structures" />
+                    <img src="../img/Hull-Structure.jpg" alt="Hull and Structures" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-ship"></i> Hull and Structures</h2>
@@ -236,7 +238,7 @@
 
             <div class="service" id="storage-tank">
                 <div class="service-img">
-                    <img src="./img/tank.jpg" alt="Storage Tanks" />
+                    <img src="../img/tank.jpg" alt="Storage Tanks" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-oil-tank"></i> Storage Tanks</h2>
@@ -250,7 +252,7 @@
 
             <div class="service" id="psv">
                 <div class="service-img">
-                    <img src="./img/pressure-valve.jpg" alt="Pressure Safety Valves" />
+                    <img src="../img/pressure-valve.jpg" alt="Pressure Safety Valves" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-compress-arrows-alt"></i> Pressure Safety Valves</h2>
@@ -264,7 +266,7 @@
 
             <div class="service" id="instrument-calibration">
                 <div class="service-img">
-                    <img src="./img/calibration.jpg" alt="Instrument Calibration" />
+                    <img src="../img/calibration.jpg" alt="Instrument Calibration" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-microchip"></i> Instrument Calibration</h2>
@@ -278,7 +280,7 @@
 
             <div class="service" id="jacking">
                 <div class="service-img">
-                    <img src="./img/jacking-system.jpg" alt="Jacking System" />
+                    <img src="../img/jacking-system.jpg" alt="Jacking System" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-microchip"></i> Jacking System</h2>
@@ -292,7 +294,7 @@
 
             <div class="service" id="dropped-object">
                 <div class="service-img">
-                    <img src="./img/dropped-object.jpg" alt="Dropped Object Management" />
+                    <img src="../img/dropped-object.jpg" alt="Dropped Object Management" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-exclamation-triangle"></i> Dropped Object Management</h2>
@@ -306,7 +308,7 @@
 
             <div class="service" id="ndt">
                 <div class="service-img">
-                    <img src="./img/nonDT.jpg" alt="Non-Destructive Testing" />
+                    <img src="../img/nonDT.jpg" alt="Non-Destructive Testing" />
                 </div>
                 <div class="service-text">
                     <h2><i class="fas fa-search"></i> Non-Destructive Testing (NDT)</h2>
@@ -320,11 +322,57 @@
         </section>
 
 
-    </div>
 
-    <script src="./index.js"></script>
-    <script src="./form.js"></script>
-    <script src="./services.js"></script>
+    </div>
+    <footer class="footer">
+        <div class="footer-container">
+            <div class="logo">
+                <a href="../html/index.html"><img src="../img/Giko Logo White.png" alt="Giko Logo White" class="logo-img"></a>
+                <a href="../html/index.html"><img src="../img/Giko Logo Blue.png" alt="Giko Logo Blue" class="logo-blue"></a>
+            </div>
+            <div class="footer-column">
+                <h3>About Us</h3>
+                <p>
+                    We provide high-quality engineering inspection, calibration, and technical consulting services across industrial and offshore sectors.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Services</h3>
+                <ul>
+                    <li><a href="../html/services.html">Asset Integrity</a></li>
+                    <li><a href="../html/IServices.html">Inspection Services</a></li>
+                    <li><a href="#">QC Services</a></li>
+                    <li><a href="#">Engineering Solutions</a></li>
+                    <li><a href="#">Marine Solution</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Contact</h3>
+                <p><span>Email:</span> admin@gikoengineering.com <br />info@gikoengineering.com</p>
+                <p><span>Phone:</span> <br />+234 903 765 5762 <br /> +44 79 3574 4718</p>
+                <p><span>Address:</span> <br />11a Ada-George rd flt 4 Mgbuoba, Portharcourt, Nigeria.</p>
+            </div>
+
+            <div class="footer-column">
+                <h3>Follow Us</h3>
+                <div class="social-links">
+                    <a href="https://www.linkedin.com/company/giko-engineering-ltd/"><i class="fab fa-linkedin-in"></i></a>
+                    <a href="#"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p>&copy; 2025 Giko Engineering LTD. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="../js/index.js"></script>
+    <script src="../js/form.js"></script>
+    <script src="../js/services.js"></script>
 
 </body>
 </html>

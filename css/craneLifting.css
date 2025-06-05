@@ -5,7 +5,7 @@
 .lifting-section {
   position: relative;
   height: 400px;
-  background: url('./img/lift.jpg') no-repeat center center;
+  background: url('../img/lift.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -39,7 +39,7 @@
     z-index: 1;
 }
 .main-content {
-    background: url('./img/black.png') no-repeat center center;
+    background: url('../img/black.png') no-repeat center center;
     background-size: cover;
     margin: 60px 0
 }

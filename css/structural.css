@@ -2,10 +2,10 @@
     box-sizing: border-box;
     margin: 0;
 }
-.trim-section {
+.structural-section {
   position: relative;
   height: 400px;
-  background: url('./img/psi.jpg') no-repeat center center;
+  background: url('../img/integrity.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
   align-items: center;
@@ -19,7 +19,7 @@
 }
 
 /* Overlay */
-.trim-section::before {
+.structural-section::before {
   content: '';
   position: absolute;
   top: 0;
@@ -30,7 +30,7 @@
   z-index: 0;
 }
 
-.trim-section span {
+.structural-section span {
     position: relative;
     padding: 60px 0 0 40px;
     font-family: var(--heading-font);
