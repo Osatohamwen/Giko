@@ -9,7 +9,6 @@
   background: url('../img/bg-10.jpg') no-repeat center center;
   background-size: cover;
   display: flex;
-/*  justify-content: center;*/
   align-items: center;
 }
 
@@ -22,8 +21,8 @@
   position: absolute;
   width: 100%;
   height: 100%;
-  backdrop-filter: blur(5px); /* Blurs the background */
-  background-color: rgba(0, 0, 0, 0.4); /* Optional: darkens for better contrast */
+  backdrop-filter: blur(5px);
+  background-color: rgba(0, 0, 0, 0.4);
   top: 0;
   left: 0;
   z-index: 1;
@@ -32,8 +31,6 @@
 .hero-section span {
   position: relative;
   padding: 100px 0 0 60px;
-/*  color: white;*/
-/*  font-size: 48px;*/
   z-index: 2;
 }
 
@@ -104,9 +101,8 @@ input, select, textarea {
 }
 
 .policy-check input[type="checkbox"] {
-/*  margin-right: 0.5rem;*/
   transform: scale(1.2);
-  accent-color: #007BFF; /* Optional: make it blue */
+  accent-color: #007BFF;
 }
 
 .policy-agreement a {
