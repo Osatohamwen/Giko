@@ -27,7 +27,7 @@ h1, h2, h3 {
     background: rgba(255, 255, 255, 1);
     color: white;
     z-index: 999;
-    transition: background 0.3s ease, color 0.3s ease;
+    transition: top 0.3s ease, background 0.3s ease, color 0.3s ease;
     font-family: var(--heading-font);
     font-size: 1rem;
     border-bottom: 1px solid #353434;
@@ -35,18 +35,11 @@ h1, h2, h3 {
 
 
 /* Logo */
-.logo-img, .logo-blue{
+.logo-blue{
     width: 80px;
     height: 60px;
 }
 
-.logo-blue {
-    display: flex;
-}
-.logo-img {
-    display: none;
-
-}
 
 /* Navigation */
 .topNavItemsBurger {
@@ -86,10 +79,13 @@ h1, h2, h3 {
     width: 85%;
 }
 .topNavItems a {
-    color: #fff;
+    color: #19194f;
     text-decoration: none;
     transition: color 0.3s;
     font-family: inherit;
+}
+.nav-item i{
+    color: #19194f;
 }
 .search-hidden {
     display: none;
@@ -197,7 +193,7 @@ h1, h2, h3 {
     opacity: 1;
     z-index: 1;
 }
-.slide1 { background-image: url('../img/bg-2.jpg'); }
+.slide1 { background-image: url('../img/bg-6.jpg'); }
 .slide2 { background-image: url('../img/bg-9.jpg'); }
 .slide3 { background-image: url('../img/bg-7.jpg'); }
 .slide4 { background-image: url('../img/bg-8.jpg'); }
@@ -680,16 +676,7 @@ h1, h2, h3 {
   font-size: 14px;
 }
 
-.dev-banner {
-  background-color: #fff;
-  color: #0066cc;
-  padding: 10px 20px;
-  text-align: center;
-  font-weight: bold;
-  border-top: 2px solid #ffeeba;
-  margin: 20px 0 0 0;
-  font-family: var(--heading-font);
-}
+
 
 
 
@@ -745,15 +732,7 @@ h1, h2, h3 {
 @media (min-width: 768px) {
     .header {
         padding: 20px 20px;
-        background: rgba(0, 0, 0, 1);
-    }
-
-    .logo-blue {
-        display: none;
-    }
-
-    .logo-img {
-        display: flex;
+/*        background: rgba(0, 0, 0, 1);*/
     }
 
     .search-hidden-box input {
@@ -769,12 +748,12 @@ h1, h2, h3 {
         width: 90%;
     }
 
-        .topNavItems .nav-item:hover {
-            color: #ffd700;
+        .topNavItems .nav-item i:hover {
+            color: rgb(0, 102, 204);
         }
 
         .topNavItems .nav-item a:hover {
-            color: #ffd700;
+            color: rgb(0, 102, 204);
         }
 
     .img-slider-content span {
@@ -797,11 +776,13 @@ h1, h2, h3 {
     .contact-btn {
         background-color: transparent;
         border: 1px solid #ffd700;
+        color: #ccc;
     }
 
 
         .contact-btn:hover {
             background-color: #ffd700;
+            color: #fff;
         }
 
     .dropdown-menu {
@@ -811,7 +792,7 @@ h1, h2, h3 {
     }
 
     .slide1 {
-        background-image: url('../img/bg-6.jpg');
+        background-image: url('../img/bg-2.jpg');
     }
 
     .slide3 {

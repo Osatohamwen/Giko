@@ -22,6 +22,24 @@
         if (e.key === 'Escape') hideSearchOverlay();
     });
 
+    // ==== Header Scroller with modern scrollY ====
+    const header = document.querySelector(".header");
+    let lastScrollTop = 0;
+
+    window.addEventListener("scroll", function () {
+        const scrollTop = window.scrollY || document.documentElement.scrollTop;
+
+        if (scrollTop > lastScrollTop) {
+            // Scrolling down
+            header.style.top = "-100px";
+        } else {
+            // Scrolling up
+            header.style.top = "0";
+        }
+
+        lastScrollTop = scrollTop <= 0 ? 0 : scrollTop;
+    });
+
     // === Image Slider Logic ===
     const slides = document.querySelectorAll('.slide');
     let current = 0;
